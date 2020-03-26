@@ -14,12 +14,12 @@ body {
 }
 
 header, footer {
+  font-family: Helvetica;
   background-color: #579c87;
   color: #fdcb46;
 }
 
 header h1 {
-  font-family: Helvetica;
   text-align: center;
   margin: 0;
   padding: 2% 0 2% 0;
@@ -48,9 +48,11 @@ header h1 a {
   box-shadow: 0px 0px 8px 6px #e8e8e8;
 }
 
-.soustitre {
+.soustitre, #nom_restaurant, .plats {
   display: flex;
-  justify-content: space-between;
+}
+
+.soustitre {
   align-items: center;
 }
 
@@ -59,73 +61,11 @@ header h1 a {
 }
 
 #nom_restaurant {
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6% 0 2% 0;
   line-height: 0.2;
   font-weight: lighter;
-}
-
-#appetit {
-  font-family: "cultura";
-  color: #ce782d;
-  line-height: 0.3;
-  margin: 0 5% 0 5%;
-  padding: 3% 0 3% 0;
-  width: 80%;
-  margin: auto;
-}
-#appetit h3 {
-  font-family: "cultura";
-  text-align: center;
-  font-size: 112%;
-  letter-spacing: 1.1px;
-}
-
-#plaisir {
-  font-family: "cultura";
-  color: #a86698;
-  line-height: 0.3;
-  margin: 0 5% 0 5%;
-  padding: 3% 0 3% 0;
-  width: 80%;
-  margin: auto;
-}
-#plaisir h3 {
-  font-family: "cultura";
-  text-align: center;
-  font-size: 112%;
-  letter-spacing: 1.1px;
-}
-
-#gourmandise {
-  font-family: "cultura";
-  color: #6b56a3;
-  line-height: 0.3;
-  margin: 0 5% 0 5%;
-  padding: 3% 0 3% 0;
-  width: 80%;
-  margin: auto;
-}
-#gourmandise h3 {
-  font-family: "cultura";
-  text-align: center;
-  font-size: 112%;
-  letter-spacing: 1.1px;
-}
-
-.plats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: "cultura";
-  font-weight: lighter;
-  font-size: 110%;
-}
-
-.prix {
-  font-weight: bold;
 }
 
 h2 {
@@ -140,14 +80,54 @@ h2 {
   padding: 5% 0 3% 0;
 }
 
+#appetit, #plaisir, #gourmandise {
+  font-family: "cultura";
+  line-height: 0.3;
+  margin: 0 5% 0 5%;
+  padding: 3% 0 3% 0;
+  width: 80%;
+  margin: auto;
+}
+#appetit h3, #plaisir h3, #gourmandise h3 {
+  font-family: "cultura";
+  text-align: center;
+  font-size: 112%;
+  letter-spacing: 1.1px;
+}
+
+#appetit {
+  color: #ce782d;
+}
+
+#plaisir {
+  color: #a86698;
+}
+
+#gourmandise {
+  color: #6b56a3;
+}
+
+.plats {
+  flex-direction: row;
+  font-family: "cultura";
+  font-weight: lighter;
+  font-size: 110%;
+}
+
+.prix {
+  font-weight: bold;
+}
+
+footer, .plats, .soustitre {
+  justify-content: space-between;
+}
+
 footer {
-  font-family: Helvetica;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   color: #fdcb46;
   background-color: #579c87;
   border-top: 0.5px solid #a1c181;

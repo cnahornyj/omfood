@@ -13,12 +13,12 @@ body {
 }
 
 header, footer {
+  font-family: Helvetica;
   background-color: #579c87;
   color: #fdcb46;
 }
 
 header h1 {
-  font-family: Helvetica;
   text-align: center;
   margin: 0;
   padding: 2% 0 2% 0;
@@ -47,59 +47,51 @@ header h1 a {
   box-shadow: 0px 0px 8px 6px #e8e8e8;
 }
 
-.sous_titre {
+.soustitre, #nom_restaurant, .plats, #signature {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.trait {
-  width: 220px;
+.soustitre, .plats, footer {
+  justify-content: space-between;
 }
 
 #nom_restaurant {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 6% 0 2% 0;
   line-height: 0.2;
   font-weight: lighter;
 }
 
-#prelude {
+#prelude h3 {
   font-family: "comics";
   color: #3c1218;
+}
+
+#prelude {
   line-height: 0.3;
   margin: 0 5% 0 5%;
   padding: 2% 0 2% 0;
 }
 #prelude h3 {
-  font-family: "comics";
   text-align: center;
-  color: #3c1218;
 }
-#prelude .soustitre {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#prelude .soustitre .trait {
+#prelude .trait {
   width: 200px;
 }
 #prelude .plats {
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 #prelude .prix {
   font-weight: bold;
 }
 
-#signature {
-  display: flex;
+#signature, h2 {
   font-family: "devonshire";
-  align-items: center;
   color: #3c1218;
+}
+
+#signature {
   justify-content: center;
   padding: 1%;
 }
@@ -108,26 +100,22 @@ header h1 a {
   padding-left: 2%;
 }
 
+h2 {
+  font-size: 230%;
+  font-weight: lighter;
+}
+
 img {
   width: 50px;
   height: 50px;
 }
 
-h2 {
-  font-family: "devonshire";
-  color: #3c1218;
-  font-size: 230%;
-  font-weight: lighter;
-}
-
 footer {
-  font-family: Helvetica;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   color: #fdcb46;
   background-color: #579c87;
   border-top: 0.5px solid #a1c181;
