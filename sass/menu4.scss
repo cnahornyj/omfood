@@ -1,50 +1,6 @@
-@font-face {
-    font-family: 'kaushan';
-    src: url("../fonts/kaushan/Fonts/kaushanscript-regular.ttf") format("ttf");
-    src: url("../fonts/kaushan/Fonts/kaushanscript-regular-webfont.woff") format("woff");
-    src: url("../fonts/kaushan/Fonts/kaushanscript-regular-webfont.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: 'comics';
-    src: url("../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff") format("woff");
-    src: url("../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff2") format("woff2");
-}
-
-body { 
-    margin: 0;
-}
-
-header, footer {
-    font-family: Helvetica;
-    background-color:#579c87;
-    color: #fdcb46;
-}
-
-header {
-    h1 {
-        font-family: Helvetica;
-        text-align: center;
-        margin: 0;
-        padding: 2% 0 2% 0;
-        border-bottom: 0.5px solid #a1c181; 
-        a {
-            text-decoration: none;
-            color: #fdcb46;
-        }
-    }
-}
-
-#titre {
-    text-align: center;
-    font-family: Helvetica;
-    font-size: 155%;
-}
-
 h2 { 
     font-family: 'kaushan';
     font-size: 300%;
-    font-weight: lighter;
     color: #3d9339;
     background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
     background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
@@ -54,27 +10,11 @@ h2 {
 }
 
 #menu {
-    width: 650px;
-    height: 850px;
-    margin: auto;
-    margin-top: 1%;
-    margin-bottom: 5%;
     background-color: #fdfefd;
-    -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-}
-
-#nom_restaurant, .soustitre, .plats {
-    display: flex;
-    align-items: center;
 }
 
 #nom_restaurant {
-    flex-direction: column;
     padding-top: 3%;
-    line-height: 0.2;
-    font-weight: lighter;
 }
 
 #prelude {
@@ -87,75 +27,4 @@ h2 {
         font-family: 'comics';
         text-align: center;
     }
-}
-
-.trait {
-    width: 150px;
-}
-  
-.plats {
-    flex-direction: row;
-}
-
-.prix {
-    font-weight: bold;
-}
-
-img {
-    width: 50px;
-    height: 50px;
-}
-
-footer, .soustitre, .plats {
-    justify-content: space-between;
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  border-top: 0.5px solid #a1c181;
-  .mentions_contact {
-      padding: 0 2% 0 2%;
-      display: inline-block;
-      animation: wiggle 7000ms infinite;
-  }
-}
-
-@keyframes wiggle {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
-@-webkit-keyframes wiggle {
-  10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-      transform: translate3d(2px, 0, 0);
-  }
-  
-  30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-  }
-  
-  40%, 60% {
-      transform: translate3d(4px, 0, 0);
-  }
 }
