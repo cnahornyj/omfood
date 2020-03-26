@@ -56,7 +56,7 @@ header h1 a {
   justify-content: space-evenly;
   padding-top: 2%;
   margin: auto;
-  width: 50%;
+  width: 40%;
 }
 #menus #menu1 {
   background-color: #fcdfdb;
@@ -275,6 +275,42 @@ footer .mentions_contact {
   }
   40%, 60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+@media (max-width: 700px) {
+  #menus {
+    padding-top: 5%;
+  }
+
+  #prochainement {
+    margin: 2% 0 15% 0;
+  }
+}
+@media (max-width: 430px) {
+  #prochainement {
+    margin: 2% 0 18% 0;
+  }
+
+  #menu1, #menu2, #menu3, #menu4 {
+    margin-bottom: 20%;
+  }
+}
+@media (max-width: 315px) {
+  #prochainement {
+    margin: 2% 0 20% 0;
+  }
+}
+@media (max-width: 255px) {
+  #menu1, #menu2, #menu3, #menu4 {
+    margin-bottom: 30%;
+  }
+
+  #prochainement {
+    margin: 2% 0 30% 0;
+  }
+
+  footer {
+    text-align: center;
   }
 }
 

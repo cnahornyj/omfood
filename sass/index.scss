@@ -64,7 +64,7 @@ header {
     justify-content: space-evenly;
     padding-top: 2%;
     margin: auto;
-    width: 50%;
+    width: 40%;
     #menu1 {
         background-color: #fcdfdb;
         img {
@@ -299,5 +299,43 @@ footer {
         }
       }
 
+$breakpoint: 700px;
+@media (max-width: $breakpoint){
+    #menus {
+        padding-top: 5%;
+    }
+    #prochainement {
+        margin: 2% 0 15% 0;
+    }
+}
 
+$breakpoint1: 430px;
+@media (max-width: $breakpoint1){
+    #prochainement {
+        margin: 2% 0 18% 0;
+    }
+    #menu1, #menu2, #menu3, #menu4 {
+        margin-bottom: 20%;
+    }
+}
+
+$breakpoint2: 315px;
+@media (max-width: $breakpoint2){
+    #prochainement {
+        margin: 2% 0 20% 0;
+    }
+}
+
+$breakpoint3: 255px;
+@media (max-width: $breakpoint3){
+    #menu1, #menu2, #menu3, #menu4 {
+        margin-bottom: 30%;
+    }
+    #prochainement {
+        margin: 2% 0 30% 0;
+    }
+    footer {
+        text-align: center;
+    }
+}
 
