@@ -1,12 +1,11 @@
 h2 { 
     font-family: 'croissant';
     color: #c77529;
-    background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
-    background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+    background: -o-linear-gradient(left, #c77529 0%, #8f5bfe 100%);
+    background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 230%;
-    padding: 5% 0 3% 0;
 }
 
 #menu {
@@ -29,6 +28,7 @@ h2 {
         text-align: center;
         font-size: 112%;
         letter-spacing: 1.1px;
+        padding-bottom: 2%;
     }
 }
 
@@ -44,8 +44,14 @@ h2 {
     color: #6b56a3;
 }
 
+.soustitre {
+    padding-bottom: 2%;
+}
+
 .plats {
     font-family: 'cultura';
     font-weight: lighter;
-    font-size: 110%;
+    font-size: 95%;
+    width: 85%;
+    margin: auto;
 }

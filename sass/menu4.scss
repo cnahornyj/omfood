@@ -6,7 +6,6 @@ h2 {
     background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 5% 1% 5% 1%;
 }
 
 #menu {
@@ -27,4 +26,10 @@ h2 {
         font-family: 'comics';
         text-align: center;
     }
+}
+
+.plats {
+    width: 85%;
+    margin: auto;
+    font-size: 86%;
 }

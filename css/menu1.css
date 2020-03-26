@@ -41,6 +41,7 @@ header h1 a {
   margin: auto;
   margin-top: 1%;
   margin-bottom: 5%;
+  color: #3d1319;
   background-color: #fcdfdb;
   -webkit-box-shadow: 0px 0px 8px 6px #e8e8e8;
   -moz-box-shadow: 0px 0px 8px 6px #e8e8e8;
@@ -65,7 +66,6 @@ header h1 a {
 
 #prelude h3 {
   font-family: "comics";
-  color: #3c1218;
 }
 
 #prelude {
@@ -81,6 +81,9 @@ header h1 a {
 }
 #prelude .plats {
   flex-direction: row;
+  width: 95%;
+  margin: auto;
+  font-family: "comics";
 }
 #prelude .prix {
   font-weight: bold;
@@ -88,7 +91,6 @@ header h1 a {
 
 #signature, h2 {
   font-family: "devonshire";
-  color: #3c1218;
 }
 
 #signature {

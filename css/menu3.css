@@ -6,7 +6,6 @@ h2 {
   background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 5% 0 3% 0;
 }
 
 #menu {
