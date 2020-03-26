@@ -16,6 +16,7 @@ body {
 }
 
 header, footer {
+    font-family: Helvetica;
     background-color:#579c87;
     color: #fdcb46;
 }
@@ -64,10 +65,13 @@ h2 {
     box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
 }
 
-#nom_restaurant {
+#nom_restaurant, .soustitre, .plats {
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+#nom_restaurant {
+    flex-direction: column;
     padding-top: 3%;
     line-height: 0.2;
     font-weight: lighter;
@@ -85,20 +89,12 @@ h2 {
     }
 }
 
-.soustitre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .trait {
     width: 150px;
 }
   
 .plats {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .prix {
@@ -110,16 +106,16 @@ img {
     height: 50px;
 }
 
+footer, .soustitre, .plats {
+    justify-content: space-between;
+}
+
 footer {
-  font-family: Helvetica;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  color: #fdcb46;
-  background-color: #579c87;
   border-top: 0.5px solid #a1c181;
   .mentions_contact {
       padding: 0 2% 0 2%;
