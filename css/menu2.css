@@ -128,8 +128,6 @@ footer {
   bottom: 0;
   width: 100%;
   display: flex;
-  color: #fdcb46;
-  background-color: #579c87;
   border-top: 0.5px solid #a1c181;
 }
 footer .mentions_contact {
