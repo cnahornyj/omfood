@@ -33,6 +33,7 @@ body {
 }
 
 header, footer {
+  font-family: Helvetica;
   background-color: #579c87;
   color: #fdcb46;
 }
@@ -60,14 +61,75 @@ header h1 a {
 #menus #menu1 {
   background-color: #fcdfdb;
 }
+#menus #menu1 img {
+  top: 40%;
+  width: 30px;
+  height: 30px;
+}
+#menus #menu1 h2 {
+  top: 45%;
+  font-family: "devonshire";
+  font-size: 125%;
+  color: #3c1218;
+}
+#menus #menu1 h3 {
+  top: 55%;
+  font-family: "kalam";
+  color: #3c1218;
+}
 #menus #menu2 {
   background-color: #fff5fe;
+}
+#menus #menu2 h2 {
+  top: 40%;
+  font-family: "croissant";
+  font-size: 95%;
+  color: #c77529;
+  background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
+  background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menus #menu2 h3 {
+  top: 50%;
+  font-family: "charissil";
+  color: #c77412;
 }
 #menus #menu3 {
   background-color: #f9f9f9;
 }
+#menus #menu3 h2 {
+  top: 35%;
+  font-family: "parisienne";
+  font-size: 120%;
+  color: #0431df;
+  background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
+  background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menus #menu3 h3 {
+  top: 50%;
+  font-family: "comics";
+  color: #0887fb;
+}
 #menus #menu4 {
   background-color: #fdfffd;
+}
+#menus #menu4 h2 {
+  top: 35%;
+  font-family: "kaushan";
+  font-size: 130%;
+  color: #3d9339;
+  background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
+  background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menus #menu4 h3 {
+  top: 50%;
+  font-family: "comics";
+  color: #92cd7c;
 }
 
 #menu1, #menu2, #menu3, #menu4 {
@@ -80,96 +142,15 @@ header h1 a {
   -moz-box-shadow: 0px 0px 8px 6px #e8e8e8;
   box-shadow: 0px 0px 8px 6px #e8e8e8;
 }
-
-#menu1 img {
-  position: relative;
-  top: 40%;
+#menu1 img, #menu1 h2, #menu1 h3, #menu2 img, #menu2 h2, #menu2 h3, #menu3 img, #menu3 h2, #menu3 h3, #menu4 img, #menu4 h2, #menu4 h3 {
+  position: absolute;
   transform: translateY(-50%);
+  width: 100%;
+}
+#menu1 img, #menu2 img, #menu3 img, #menu4 img {
+  position: relative;
   width: 30px;
   height: 30px;
-}
-#menu1 h2 {
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "devonshire";
-  font-size: 125%;
-  color: #3c1218;
-}
-#menu1 h3 {
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "kalam";
-  color: #3c1218;
-}
-
-#menu2 h2 {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "croissant";
-  font-size: 95%;
-  color: #c77529;
-  background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
-  background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#menu2 h3 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "charissil";
-  color: #c77412;
-}
-
-#menu3 h2 {
-  position: absolute;
-  top: 35%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "parisienne";
-  font-size: 120%;
-  color: #0431df;
-  background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
-  background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#menu3 h3 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "comics";
-  color: #0887fb;
-}
-
-#menu4 h2 {
-  position: absolute;
-  top: 35%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "kaushan";
-  font-size: 130%;
-  color: #3d9339;
-  background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
-  background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#menu4 h3 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-family: "comics";
-  color: #92cd7c;
 }
 
 .contenu {
@@ -252,7 +233,6 @@ header h1 a {
   }
 }
 footer {
-  font-family: Helvetica;
   position: fixed;
   left: 0;
   bottom: 0;
