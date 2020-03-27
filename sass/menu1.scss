@@ -70,6 +70,12 @@ header {
 
 #prelude h3 {
     font-family: 'comics';
+    background: linear-gradient(to top, rgba(255,0,0,0.5) 0%, rgba(255,0,0,0.5) 4px, transparent 5px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 300ms;
+    &:hover {
+        background-size: 100% 100%;
+    }
 }
 
 #prelude {
