@@ -10,66 +10,26 @@
     src: url("../fonts/devonshire/Fonts/devonshire-regular-webfont.woff2") format("woff2");
 }
 
-body { 
-    margin: 0;
-}
-
-header, footer {
-    font-family: Helvetica;
-    background-color:#579c87;
-    color: #fdcb46;
-}
-
-header {
-    h1 {
-        text-align: center;
-        margin: 0;
-        padding: 2% 0 2% 0;
-        border-bottom: 0.5px solid #a1c181; 
-        a {
-            text-decoration: none;
-            color: #fdcb46;
-        }
-    }
-}
-
-#titre {
-    text-align: center;
-    font-family: Helvetica;
-    font-size: 155%;
-}
-
 #menu {
-    width: 650px;
-    height: 850px;
-    margin: auto;
-    margin-top: 1%;
-    margin-bottom: 5%;
+    height: 900px;
     color: #3d1319;
     background-color: #fcdfdb;
-    -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-}
-
-.soustitre, #nom_restaurant, .plats, #signature {
-    display: flex;
-    align-items: center;
-}
-
-.soustitre, .plats, footer {
-    justify-content: space-between;
 }
 
 #nom_restaurant {
-    flex-direction: column;
     padding: 6% 0 2% 0;
     line-height: 0.2;
     font-weight: lighter;
 }
 
-#prelude h3 {
+h2 { 
+    font-family: 'devonshire';
+    font-size: 230%;
+}
+
+h3 {
     font-family: 'comics';
+    text-align: center;
     background: linear-gradient(to top, rgba(255,0,0,0.5) 0%, rgba(255,0,0,0.5) 4px, transparent 5px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms;
@@ -78,98 +38,35 @@ header {
     }
 }
 
-#prelude {
-    line-height: 0.3;
+#entrees, #plats, #desserts {
     margin: 0 5% 0 5%;
-    padding: 2% 0 2% 0;
-    h3 {
-        text-align: center;
-    }
-    .trait {
-        width: 200px;
-    }
-    .plats {
-        flex-direction: row;
-        width: 95%;
-        margin: auto;
-        font-family: "comics";
-    }
-    .prix {
-        font-weight: bold;
-    }
+    padding: 2% 0 2% 0;  
 }
 
-#signature, h2 {
-    font-family: 'devonshire';
+.trait {
+    width: 200px;
+}
+
+.assiette {
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    font-family: "comics";
 }
 
 #signature {
+    display: flex;
+    align-items: center;
     justify-content: center;
     padding: 1%;
     p {
+        font-family: 'devonshire';
         font-size: 150%;
         padding-left: 2%;
     }
 }
 
-h2 { 
-    font-size: 230%;
-    font-weight: lighter;
-}
-
 img {
     width: 50px;
     height: 50px;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    color: #fdcb46;
-    background-color: #579c87;
-    border-top: 0.5px solid #a1c181;
-    .mentions_contact {
-        padding: 0 2% 0 2%;
-        display: inline-block;
-        animation: wiggle 7000ms infinite;
-    }
-}
-
-@keyframes wiggle {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-  
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-}
-
-@-webkit-keyframes wiggle {
-    10%, 90% {
-        transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    
-    30%, 50%, 70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-    
-    40%, 60% {
-        transform: translate3d(4px, 0, 0);
-    }
 }

@@ -10,21 +10,21 @@ h2 {
 
 #menu {
   background-color: #fff5fe;
+  height: 950px;
 }
 
 #nom_restaurant {
   padding: 6% 0 2% 0;
 }
 
-#appetit, #plaisir, #gourmandise {
+#entrees, #plats, #desserts {
   font-family: "cultura";
-  line-height: 0.3;
   margin: 0 5% 0 5%;
   padding: 3% 0 3% 0;
   width: 80%;
   margin: auto;
 }
-#appetit h3, #plaisir h3, #gourmandise h3 {
+#entrees h3, #plats h3, #desserts h3 {
   font-family: "cultura";
   text-align: center;
   font-size: 112%;
@@ -32,15 +32,15 @@ h2 {
   padding-bottom: 2%;
 }
 
-#appetit {
+#entrees {
   color: #ce782d;
 }
 
-#plaisir {
+#plats {
   color: #a86698;
 }
 
-#gourmandise {
+#desserts {
   color: #6b56a3;
 }
 
@@ -48,12 +48,9 @@ h2 {
   padding-bottom: 2%;
 }
 
-.plats {
+.assiette {
   font-family: "cultura";
-  font-weight: lighter;
-  font-size: 95%;
-  width: 85%;
-  margin: auto;
+  font-size: 110%;
 }
 
 /*# sourceMappingURL=menu2.css.map */

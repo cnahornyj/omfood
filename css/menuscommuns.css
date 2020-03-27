@@ -54,7 +54,6 @@ header h1 a {
 
 #menu {
   width: 650px;
-  height: 850px;
   margin: auto;
   margin-top: 1%;
   margin-bottom: 5%;
@@ -73,7 +72,7 @@ h2 {
   font-weight: lighter;
 }
 
-#nom_restaurant, .soustitre, .plats {
+#nom_restaurant, .soustitre, .assiette {
   display: flex;
   align-items: center;
 }
@@ -86,15 +85,16 @@ h2 {
   width: 150px;
 }
 
-.plats {
+.assiette {
   flex-direction: row;
+  line-height: 0.3;
 }
 
 .prix {
   font-weight: bold;
 }
 
-footer, .plats, .soustitre {
+footer, .assiette, .soustitre {
   justify-content: space-between;
 }
 
@@ -104,6 +104,8 @@ footer {
   bottom: 0;
   width: 100%;
   display: flex;
+  color: #fdcb46;
+  background-color: #579c87;
   border-top: 0.5px solid #a1c181;
 }
 footer .mentions_contact {
