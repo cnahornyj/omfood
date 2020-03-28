@@ -54,9 +54,11 @@ header h1 a {
 
 #menu {
   width: 650px;
+  height: 100%;
   margin: auto;
   margin-top: 1%;
   margin-bottom: 5%;
+  padding-bottom: 5%;
   -webkit-box-shadow: 0px 0px 8px 6px #e8e8e8;
   -moz-box-shadow: 0px 0px 8px 6px #e8e8e8;
   box-shadow: 0px 0px 8px 6px #e8e8e8;
@@ -64,6 +66,16 @@ header h1 a {
 
 h2 {
   font-weight: lighter;
+}
+
+h3 {
+  background: linear-gradient(to top, rgba(253, 203, 70, 0.5) 0%, rgba(253, 203, 70, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 300ms;
+  text-align: center;
+}
+h3:hover {
+  background-size: 100% 100%;
 }
 
 #nom_restaurant {
@@ -140,6 +152,115 @@ footer .mentions_contact {
   }
   40%, 60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+@media (max-width: 1250px) {
+  #menu {
+    margin-bottom: 7%;
+  }
+}
+@media (max-width: 950px) {
+  #menu {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 750px) {
+  #menu {
+    margin-bottom: 12%;
+    width: 550px;
+  }
+
+  .assiette {
+    line-height: 1.2;
+    align-items: baseline;
+  }
+
+  #entrees, #plats, #desserts {
+    padding: 0;
+  }
+}
+@media (max-width: 570px) {
+  #menu {
+    margin-bottom: 12%;
+    width: 475px;
+  }
+
+  #nom_restaurant {
+    padding-top: 6%;
+  }
+
+  .trait {
+    width: 100px;
+  }
+
+  .assiette {
+    width: 95%;
+    font-size: 100%;
+  }
+
+  .prix {
+    padding-left: 2%;
+  }
+}
+@media (max-width: 520px) {
+  #menu {
+    width: 400px;
+    margin-bottom: 20%;
+  }
+
+  h3 {
+    font-size: 100%;
+  }
+}
+@media (max-width: 450px) {
+  #menu {
+    width: 350px;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 95%;
+  }
+
+  .trait {
+    width: 90px;
+  }
+}
+@media (max-width: 380px) {
+  #menu {
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 130%;
+  }
+
+  .trait {
+    width: 70px;
+  }
+}
+@media (max-width: 320px) {
+  #menu {
+    width: 250px;
+  }
+
+  h2 {
+    font-size: 110%;
+  }
+
+  h3 {
+    font-size: 85%;
+  }
+
+  .trait {
+    width: 60px;
+  }
+
+  .assiette {
+    font-size: 85%;
   }
 }
 

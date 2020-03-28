@@ -10,7 +10,6 @@ h2 {
 
 #menu {
     background-color: #fdfefd;
-    height: 850px;
 }
 
 #nom_restaurant {
@@ -22,8 +21,34 @@ h2 {
     margin: auto;
     padding: 2% 0 2% 0;
     width: 75%;
-    h3 {
-        font-family: 'comics';
-        text-align: center;
+}
+
+h3 {
+    font-family: 'comics';
+}
+
+$breakpoint: 750px;
+@media (max-width: $breakpoint){
+    h2 {
+        font-size: 250%;
+    }
+    #entrees, #plats, #desserts {
+        padding-bottom: 5%;
+        line-height: 1;
+        margin-top: -30px;
+    }
+}
+
+$breakpoint: 450px;
+@media (max-width: $breakpoint){
+    h2 {
+        font-size: 210%;
+    }
+}
+
+$breakpoint: 320px;
+@media (max-width: $breakpoint){
+    h2 {
+        font-size: 180%;
     }
 }

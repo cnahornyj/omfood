@@ -10,7 +10,6 @@ h2 {
 
 #menu {
     background-color: #fff5fe;
-    height: 950px;
 }
 
 #nom_restaurant {
@@ -23,13 +22,14 @@ h2 {
     padding: 3% 0 3% 0;
     width: 80%;
     margin: auto;
-    h3 {
-        font-family: 'cultura';
-        text-align: center;
-        font-size: 112%;
-        letter-spacing: 1.1px;
-        padding-bottom: 2%;
-    }
+}
+
+h3 {
+    font-family: 'cultura';
+    text-align: center;
+    font-size: 112%;
+    letter-spacing: 1.1px;
+    padding-bottom: 2%;
 }
 
 #entrees {
@@ -52,3 +52,45 @@ h2 {
     font-family: 'cultura';
     font-size: 110%;
 }
+
+$breakpoint: 570px;
+@media (max-width: $breakpoint){
+    h2 {
+        font-size: 180%;
+    }
+}
+
+$breakpoint: 450px;
+@media (max-width: $breakpoint){
+    h2 {
+        font-size: 150%;
+    }
+}
+
+$breakpoint: 380px;
+@media (max-width: $breakpoint){
+    h2 {
+        font-size: 130%;
+    }
+    #nom_restaurant {
+        padding-top: 6%;
+    }
+}
+
+$breakpoint: 320px;
+@media (max-width: $breakpoint){
+    h2 {
+        font-size: 120%;
+    }
+    h3 {
+        font-size: 100%;
+    }
+    #nom_restaurant {
+        padding-top: 6%;
+    }
+    .trait {
+        width: 45px;
+    }
+}
+
+

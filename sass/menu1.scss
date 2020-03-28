@@ -11,7 +11,6 @@
 }
 
 #menu {
-    height: 900px;
     color: #3d1319;
     background-color: #fcdfdb;
 }
@@ -29,13 +28,6 @@ h2 {
 
 h3 {
     font-family: 'comics';
-    text-align: center;
-    background: linear-gradient(to top, rgba(255,0,0,0.5) 0%, rgba(255,0,0,0.5) 4px, transparent 5px) no-repeat;
-    background-size: 0% 100%;
-    transition: background-size 300ms;
-    &:hover {
-        background-size: 100% 100%;
-    }
 }
 
 #entrees, #plats, #desserts {
@@ -90,7 +82,6 @@ $breakpoint: 750px;
     #menu {
         margin-bottom: 12%;
         width: 550px;
-        height: 950px;
     }
 }
 
@@ -99,7 +90,6 @@ $breakpoint: 570px;
     #menu {
         margin-bottom: 12%;
         width: 475px;
-        height: 825px;
     }
     #nom_restaurant {
         padding-top: 6%;
@@ -120,7 +110,6 @@ $breakpoint: 520px;
 @media (max-width: $breakpoint){
     #menu {
         width: 400px;
-        height: 750px;
         margin-bottom: 15%;
     }
     #nom_restaurant {
@@ -142,7 +131,6 @@ $breakpoint: 450px;
 @media (max-width: $breakpoint){
     #menu {
         width: 350px;
-        height: 800px;
     }
     #nom_restaurant {
         padding-top: 6%;
@@ -169,7 +157,6 @@ $breakpoint: 380px;
 @media (max-width: $breakpoint){
     #menu {
         width: 300px;
-        height: 950px;
         margin-bottom: 20%;
     }
     .assiette {
@@ -187,7 +174,6 @@ $breakpoint: 320px;
 @media (max-width: $breakpoint){
     #menu {
         width: 250px;
-        height: 875px;
     }
     h2 {
         font-size: 140%;

@@ -61,9 +61,11 @@ header {
 
 #menu {
     width: 650px;
+    height: 100%;
     margin: auto;
     margin-top: 1%;
     margin-bottom: 5%;
+    padding-bottom: 5%;
     -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
     -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
     box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
@@ -71,6 +73,16 @@ header {
 
 h2 {
     font-weight: lighter;
+}
+
+h3 {
+    background: linear-gradient(to top, rgba(#fdcb46,0.5) 0%, rgba(#fdcb46,0.5) 4px, transparent 5px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 300ms;
+    text-align: center;
+    &:hover {
+        background-size: 100% 100%;
+    }
 }
 
 #nom_restaurant {
@@ -156,6 +168,118 @@ footer {
         transform: translate3d(4px, 0, 0);
     }
   }
+
+  $breakpoint: 1250px;
+@media (max-width: $breakpoint){
+    #menu {
+        margin-bottom: 7%;
+    }
+}
+
+$breakpoint: 950px;
+@media (max-width: $breakpoint){
+    #menu {
+        margin-bottom: 10%;
+    }
+}
+
+$breakpoint: 750px;
+@media (max-width: $breakpoint){
+    #menu {
+        margin-bottom: 12%;
+        width: 550px;
+    }
+    .assiette {
+        line-height: 1.2;
+        align-items: baseline;
+    }
+    #entrees, #plats, #desserts {
+        padding: 0;
+    }
+}
+
+$breakpoint: 570px;
+@media (max-width: $breakpoint){
+    #menu {
+        margin-bottom: 12%;
+        width: 475px;
+    }
+    #nom_restaurant {
+        padding-top: 6%;
+    }
+    .trait {
+        width: 100px;
+    }
+    .assiette {
+        width: 95%;
+        font-size: 100%;
+    }
+    .prix {
+        padding-left: 2%;
+    }
+}
+
+$breakpoint: 520px;
+@media (max-width: $breakpoint){
+    #menu {
+        width: 400px;
+        margin-bottom: 20%;
+    }
+    h3 {
+        font-size: 100%;
+    }
+}
+
+
+$breakpoint: 450px;
+@media (max-width: $breakpoint){
+    #menu {
+        width: 350px;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    h3 {
+        font-size: 95%;
+    }
+    .trait {
+        width: 90px;
+    }
+}
+
+
+$breakpoint: 380px;
+@media (max-width: $breakpoint){
+    #menu {
+        width: 300px;
+    }
+    h2 {
+        font-size: 130%;
+    }
+    .trait {
+        width: 70px;
+    }
+}
+
+$breakpoint: 320px;
+@media (max-width: $breakpoint){
+    #menu {
+        width: 250px;
+    }
+    h2 {
+        font-size: 110%;
+    }
+    h3 {
+        font-size: 85%;
+    }
+    .trait {
+        width: 60px;
+    }
+    .assiette {
+        font-size: 85%;
+    }
+}
+
 
 
 

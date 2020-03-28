@@ -9,7 +9,6 @@
   src: url("../fonts/devonshire/Fonts/devonshire-regular-webfont.woff2") format("woff2");
 }
 #menu {
-  height: 900px;
   color: #3d1319;
   background-color: #fcdfdb;
 }
@@ -27,13 +26,6 @@ h2 {
 
 h3 {
   font-family: "comics";
-  text-align: center;
-  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0% 100%;
-  transition: background-size 300ms;
-}
-h3:hover {
-  background-size: 100% 100%;
 }
 
 #entrees, #plats, #desserts {
@@ -83,14 +75,12 @@ img {
   #menu {
     margin-bottom: 12%;
     width: 550px;
-    height: 950px;
   }
 }
 @media (max-width: 570px) {
   #menu {
     margin-bottom: 12%;
     width: 475px;
-    height: 825px;
   }
 
   #nom_restaurant {
@@ -113,7 +103,6 @@ img {
 @media (max-width: 520px) {
   #menu {
     width: 400px;
-    height: 750px;
     margin-bottom: 15%;
   }
 
@@ -137,7 +126,6 @@ img {
 @media (max-width: 450px) {
   #menu {
     width: 350px;
-    height: 800px;
   }
 
   #nom_restaurant {
@@ -168,7 +156,6 @@ img {
 @media (max-width: 380px) {
   #menu {
     width: 300px;
-    height: 950px;
     margin-bottom: 20%;
   }
 
@@ -187,7 +174,6 @@ img {
 @media (max-width: 320px) {
   #menu {
     width: 250px;
-    height: 875px;
   }
 
   h2 {
