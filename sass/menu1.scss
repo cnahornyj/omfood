@@ -63,42 +63,12 @@ img {
     height: 50px;
 }
 
-$breakpoint: 1250px;
-@media (max-width: $breakpoint){
-    #menu {
-        margin-bottom: 7%;
-    }
-}
-
-$breakpoint: 950px;
-@media (max-width: $breakpoint){
-    #menu {
-        margin-bottom: 10%;
-    }
-}
-
-$breakpoint: 750px;
-@media (max-width: $breakpoint){
-    #menu {
-        margin-bottom: 12%;
-        width: 550px;
-    }
-}
-
 $breakpoint: 570px;
 @media (max-width: $breakpoint){
-    #menu {
-        margin-bottom: 12%;
-        width: 475px;
-    }
-    #nom_restaurant {
-        padding-top: 6%;
-    }
     .trait {
         width: 150px;
     }
     .assiette {
-        width: 95%;
         font-size: 85%;
     }
     h2 {
@@ -109,7 +79,6 @@ $breakpoint: 570px;
 $breakpoint: 520px;
 @media (max-width: $breakpoint){
     #menu {
-        width: 400px;
         margin-bottom: 15%;
     }
     #nom_restaurant {
@@ -129,21 +98,12 @@ $breakpoint: 520px;
 
 $breakpoint: 450px;
 @media (max-width: $breakpoint){
-    #menu {
-        width: 350px;
-    }
     #nom_restaurant {
         padding-top: 6%;
-    }
-    .trait {
-        width: 100px;
     }
     .assiette {
         line-height: 1;
         align-items: baseline;
-    }
-    h2 {
-        font-size: 160%;
     }
     #entrees, #plats, #desserts {
         padding: 0;
@@ -156,7 +116,6 @@ $breakpoint: 450px;
 $breakpoint: 380px;
 @media (max-width: $breakpoint){
     #menu {
-        width: 300px;
         margin-bottom: 20%;
     }
     .assiette {
@@ -165,33 +124,21 @@ $breakpoint: 380px;
     .prix {
         padding-left: 2%;
     }
-    #entrees, #plats, #desserts {
-        padding: 0;
-    }
 }
 
 $breakpoint: 320px;
 @media (max-width: $breakpoint){
-    #menu {
-        width: 250px;
-    }
-    h2 {
-        font-size: 140%;
-    }
     .trait {
         width: 55px;
     }
     .assiette {
         font-size: 87%;
     }
-    .prix {
-        padding-left: 2%;
-    }
-    #entrees, #plats, #desserts {
-        padding: 0;
-    }
     img {
         width: 35px;
         height: 35px;
+    }
+    h2 {
+        font-size: 140%;
     }
 }

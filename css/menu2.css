@@ -58,18 +58,13 @@ h3 {
     font-size: 180%;
   }
 }
-@media (max-width: 450px) {
-  h2 {
-    font-size: 150%;
-  }
-}
 @media (max-width: 380px) {
-  h2 {
-    font-size: 130%;
-  }
-
   #nom_restaurant {
     padding-top: 6%;
+  }
+
+  h2 {
+    font-size: 140%;
   }
 }
 @media (max-width: 320px) {

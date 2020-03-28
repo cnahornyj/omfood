@@ -61,38 +61,12 @@ img {
   height: 50px;
 }
 
-@media (max-width: 1250px) {
-  #menu {
-    margin-bottom: 7%;
-  }
-}
-@media (max-width: 950px) {
-  #menu {
-    margin-bottom: 10%;
-  }
-}
-@media (max-width: 750px) {
-  #menu {
-    margin-bottom: 12%;
-    width: 550px;
-  }
-}
 @media (max-width: 570px) {
-  #menu {
-    margin-bottom: 12%;
-    width: 475px;
-  }
-
-  #nom_restaurant {
-    padding-top: 6%;
-  }
-
   .trait {
     width: 150px;
   }
 
   .assiette {
-    width: 95%;
     font-size: 85%;
   }
 
@@ -102,7 +76,6 @@ img {
 }
 @media (max-width: 520px) {
   #menu {
-    width: 400px;
     margin-bottom: 15%;
   }
 
@@ -124,25 +97,13 @@ img {
   }
 }
 @media (max-width: 450px) {
-  #menu {
-    width: 350px;
-  }
-
   #nom_restaurant {
     padding-top: 6%;
-  }
-
-  .trait {
-    width: 100px;
   }
 
   .assiette {
     line-height: 1;
     align-items: baseline;
-  }
-
-  h2 {
-    font-size: 160%;
   }
 
   #entrees, #plats, #desserts {
@@ -155,7 +116,6 @@ img {
 }
 @media (max-width: 380px) {
   #menu {
-    width: 300px;
     margin-bottom: 20%;
   }
 
@@ -166,20 +126,8 @@ img {
   .prix {
     padding-left: 2%;
   }
-
-  #entrees, #plats, #desserts {
-    padding: 0;
-  }
 }
 @media (max-width: 320px) {
-  #menu {
-    width: 250px;
-  }
-
-  h2 {
-    font-size: 140%;
-  }
-
   .trait {
     width: 55px;
   }
@@ -188,17 +136,13 @@ img {
     font-size: 87%;
   }
 
-  .prix {
-    padding-left: 2%;
-  }
-
-  #entrees, #plats, #desserts {
-    padding: 0;
-  }
-
   img {
     width: 35px;
     height: 35px;
+  }
+
+  h2 {
+    font-size: 140%;
   }
 }
 
