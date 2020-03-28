@@ -53,15 +53,13 @@ h3 {
     font-size: 110%;
 }
 
-$breakpoint: 570px;
-@media (max-width: $breakpoint){
+@media (max-width: 570px){
     h2 {
         font-size: 180%;
     }
 }
 
-$breakpoint: 380px;
-@media (max-width: $breakpoint){
+@media (max-width: 380px){
     #nom_restaurant {
         padding-top: 6%;
     }
@@ -70,8 +68,7 @@ $breakpoint: 380px;
     }
 }
 
-$breakpoint: 320px;
-@media (max-width: $breakpoint){
+@media (max-width: 320px){
     h2 {
         font-size: 120%;
     }

@@ -27,8 +27,7 @@ h3 {
     font-family: 'comics';
 }
 
-$breakpoint: 750px;
-@media (max-width: $breakpoint){
+@media (max-width: 750px){
     h2 {
         font-size: 250%;
     }
@@ -39,15 +38,13 @@ $breakpoint: 750px;
     }
 }
 
-$breakpoint: 450px;
-@media (max-width: $breakpoint){
+@media (max-width: 450px){
     h2 {
         font-size: 210%;
     }
 }
 
-$breakpoint: 320px;
-@media (max-width: $breakpoint){
+@media (max-width: 320px){
     h2 {
         font-size: 180%;
     }

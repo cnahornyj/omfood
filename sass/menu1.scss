@@ -63,8 +63,7 @@ img {
     height: 50px;
 }
 
-$breakpoint: 570px;
-@media (max-width: $breakpoint){
+@media (max-width: 570px){
     .trait {
         width: 150px;
     }
@@ -76,8 +75,7 @@ $breakpoint: 570px;
     }
 }
 
-$breakpoint: 520px;
-@media (max-width: $breakpoint){
+@media (max-width: 520px){
     #menu {
         margin-bottom: 15%;
     }
@@ -96,8 +94,7 @@ $breakpoint: 520px;
     }
 }
 
-$breakpoint: 450px;
-@media (max-width: $breakpoint){
+@media (max-width: 450px){
     #nom_restaurant {
         padding-top: 6%;
     }
@@ -113,8 +110,7 @@ $breakpoint: 450px;
     }
 }
 
-$breakpoint: 380px;
-@media (max-width: $breakpoint){
+@media (max-width: 380px){
     #menu {
         margin-bottom: 20%;
     }
@@ -126,8 +122,7 @@ $breakpoint: 380px;
     }
 }
 
-$breakpoint: 320px;
-@media (max-width: $breakpoint){
+@media (max-width: 320px){
     .trait {
         width: 55px;
     }
