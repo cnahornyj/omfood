@@ -68,9 +68,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 2%;
+    padding-top: 5%;
     margin: auto;
-    width: 40%;
+    width: 80%;
     #menu1 {
         background-color: #fcdfdb;
         img {
@@ -206,7 +206,6 @@ header {
 
 #prochainement {
     text-align: center;
-    margin-bottom: 7%;
     button {
         font-family: Helvetica;
         font-size: 130%;
@@ -259,13 +258,13 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: $couleur-primaire;
     border-top: 0.5px solid $couleur-bordure-header-footer;
     a .mentions_contact {
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
         text-decoration: none;
         text-align: center;
         color: $couleur-secondaire;
-        padding: 0 1% 0 1%;
         display: inline-block;
         animation: wiggle 1500ms infinite;
     }
@@ -273,15 +272,15 @@ footer {
 
 @keyframes wiggle {
     0%{transform: rotate(0deg)}
-    25%{transform: rotate(2deg)}
-    50%{transform: rotate(-2deg)}
+    25%{transform: rotate(4deg)}
+    50%{transform: rotate(-4deg)}
     100%{transform: rotate(0deg)}
 }
 
 @-webkit-keyframes wiggle {
     0%{transform: rotate(0deg)}
-    25%{transform: rotate(2deg)}
-    50%{transform: rotate(-2deg)}
+    25%{transform: rotate(4deg)}
+    50%{transform: rotate(-4deg)}
     100%{transform: rotate(0deg)}
 }
 

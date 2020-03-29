@@ -87,7 +87,7 @@ h2 {
 }
 
 h3 {
-    background: linear-gradient(to top, rgba($couleur-secondaire,0.5) 0%, rgba($couleur-secondaire,0.5) 4px, transparent 5px) no-repeat;
+    background: linear-gradient(to top, rgba(black,0.5) 0%, rgba(black,0.5) 4px, transparent 5px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms;
     text-align: center;
@@ -138,10 +138,11 @@ footer {
     background-color: $couleur-primaire;
     border-top: 0.5px solid $couleur-bordure-header-footer;
     a .mentions_contact {
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
         text-decoration: none;
         text-align: center;
         color: $couleur-secondaire;
-        padding: 0 1% 0 1%;
         display: inline-block;
         animation: wiggle 1500ms infinite;
     }
@@ -149,15 +150,15 @@ footer {
 
 @keyframes wiggle {
     0%{transform: rotate(0deg)}
-    25%{transform: rotate(2deg)}
-    50%{transform: rotate(-2deg)}
+    25%{transform: rotate(4deg)}
+    50%{transform: rotate(-4deg)}
     100%{transform: rotate(0deg)}
 }
 
 @-webkit-keyframes wiggle {
     0%{transform: rotate(0deg)}
-    25%{transform: rotate(2deg)}
-    50%{transform: rotate(-2deg)}
+    25%{transform: rotate(4deg)}
+    50%{transform: rotate(-4deg)}
     100%{transform: rotate(0deg)}
 }
 
