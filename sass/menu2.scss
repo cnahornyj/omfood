@@ -1,35 +1,31 @@
-h2 { 
+ h2 { 
     font-family: 'croissant';
+    font-size: 200%;
     color: #c77529;
     background: -o-linear-gradient(left, #c77529 0%, #8f5bfe 100%);
     background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 230%;
 }
 
 #menu {
     background-color: #fff5fe;
 }
 
-#nom_restaurant {
-    padding: 6% 0 2% 0;
+h3, #entrees, #plats, #desserts, .assiette  {
+    font-family: 'cultura';
 }
 
 #entrees, #plats, #desserts {
-    font-family: 'cultura';
-    margin: 0 5% 0 5%;
-    padding: 3% 0 3% 0;
-    width: 80%;
-    margin: auto;
+    padding-bottom: 5%;
 }
 
-h3 {
-    font-family: 'cultura';
-    text-align: center;
-    font-size: 112%;
-    letter-spacing: 1.1px;
-    padding-bottom: 2%;
+.assiette {
+    width: 75%;
+}
+
+.soustitre {
+    width: 90%;
 }
 
 #entrees {
@@ -43,44 +39,3 @@ h3 {
 #desserts {
     color: #6b56a3;
 }
-
-.soustitre {
-    padding-bottom: 2%;
-}
-
-.assiette {
-    font-family: 'cultura';
-    font-size: 110%;
-}
-
-@media (max-width: 570px){
-    h2 {
-        font-size: 180%;
-    }
-}
-
-@media (max-width: 380px){
-    #nom_restaurant {
-        padding-top: 6%;
-    }
-    h2 {
-        font-size: 140%;
-    }
-}
-
-@media (max-width: 320px){
-    h2 {
-        font-size: 120%;
-    }
-    h3 {
-        font-size: 100%;
-    }
-    #nom_restaurant {
-        padding-top: 6%;
-    }
-    .trait {
-        width: 45px;
-    }
-}
-
-

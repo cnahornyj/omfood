@@ -1,6 +1,5 @@
 h2 {
   font-family: "kaushan";
-  font-size: 300%;
   color: #3d9339;
   background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
   background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
@@ -8,45 +7,16 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-#menu {
-  background-color: #fdfefd;
+.assiette {
+  width: 80%;
 }
 
-#nom_restaurant {
-  padding-top: 3%;
+.soustitre {
+  width: 90%;
 }
 
-#entrees, #plats, #desserts {
-  font-family: "comics";
-  margin: auto;
-  padding: 2% 0 2% 0;
-  width: 75%;
-}
-
-h3 {
-  font-family: "comics";
-}
-
-@media (max-width: 750px) {
-  h2 {
-    font-size: 250%;
-  }
-
-  #entrees, #plats, #desserts {
-    padding-bottom: 5%;
-    line-height: 1;
-    margin-top: -30px;
-  }
-}
-@media (max-width: 450px) {
-  h2 {
-    font-size: 210%;
-  }
-}
-@media (max-width: 320px) {
-  h2 {
-    font-size: 180%;
-  }
+.trait {
+  width: 200px;
 }
 
 /*# sourceMappingURL=menu4.css.map */

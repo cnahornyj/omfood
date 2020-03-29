@@ -1,40 +1,19 @@
+h2 {
+  font-family: "devonshire";
+  margin-top: -20px;
+}
+
+#nom_restaurant {
+  padding-top: 5%;
+}
+
 #menu {
   color: #3d1319;
   background-color: #fcdfdb;
 }
 
-#nom_restaurant {
-  padding: 6% 0 2% 0;
-  line-height: 0.2;
-  font-weight: lighter;
-}
-
-h2 {
-  font-family: "devonshire";
-  font-size: 230%;
-}
-
-h3 {
-  font-family: "comics";
-}
-
-#entrees, #plats, #desserts {
-  margin: 0 5% 0 5%;
-  padding: 2% 0 2% 0;
-}
-
-p {
-  font-size: 110%;
-}
-
-.trait {
-  width: 200px;
-}
-
 .assiette {
-  flex-direction: row;
-  width: 95%;
-  margin: auto;
+  width: 75%;
   font-family: "comics";
 }
 
@@ -48,88 +27,6 @@ p {
   font-family: "devonshire";
   font-size: 150%;
   padding-left: 2%;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-}
-
-@media (max-width: 570px) {
-  .trait {
-    width: 150px;
-  }
-
-  .assiette {
-    font-size: 85%;
-  }
-
-  h2 {
-    font-size: 180%;
-  }
-}
-@media (max-width: 520px) {
-  #nom_restaurant {
-    padding-top: 6%;
-  }
-
-  .trait {
-    width: 100px;
-  }
-
-  .assiette {
-    width: 100%;
-    font-size: 75%;
-  }
-
-  h2 {
-    font-size: 160%;
-  }
-}
-@media (max-width: 450px) {
-  #nom_restaurant {
-    padding-top: 6%;
-  }
-
-  .assiette {
-    line-height: 1;
-    align-items: baseline;
-  }
-
-  #entrees, #plats, #desserts {
-    padding: 0;
-  }
-
-  h3 {
-    font-size: 100%;
-  }
-}
-@media (max-width: 380px) {
-  .assiette {
-    font-size: 85%;
-  }
-
-  .prix {
-    padding-left: 2%;
-  }
-}
-@media (max-width: 320px) {
-  .trait {
-    width: 55px;
-  }
-
-  .assiette {
-    font-size: 87%;
-  }
-
-  img {
-    width: 35px;
-    height: 35px;
-  }
-
-  h2 {
-    font-size: 140%;
-  }
 }
 
 /*# sourceMappingURL=menu1.css.map */

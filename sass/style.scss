@@ -84,9 +84,13 @@ header {
 
 h2 {
     font-weight: lighter;
+    font-size: 250%;
+    padding: 4% 0 4% 0;
+    margin-block-end: 0;
 }
 
 h3 {
+    font-family: 'comics';
     background: linear-gradient(to top, rgba(black,0.5) 0%, rgba(black,0.5) 4px, transparent 5px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 300ms;
@@ -109,23 +113,33 @@ h3 {
 
 .soustitre {
     align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 
 .trait {
-    width: 150px;
+    width: 175px;
 }
 
 .assiette {
+    font-size: 105%;
+    font-family: 'comics';
     flex-direction: row;
-    line-height: 0.85;
+    line-height: 1;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .prix {
     font-weight: bold;
 }
 
-footer, .assiette, .soustitre {
-    justify-content: space-between;
+img {
+    width: 50px;
+    height: 50px;
 }
 
 footer {
@@ -161,111 +175,6 @@ footer {
     50%{transform: rotate(-4deg)}
     100%{transform: rotate(0deg)}
 }
-
-@media (max-width: 1250px){
-    #menu {
-        margin-bottom: 10%;
-    }
-}
-
-@media (max-width: 950px){
-    #menu {
-        margin-bottom: 13%;
-    }
-}
-
-@media (max-width: 750px){
-    #menu {
-        margin-bottom: 16%;
-        width: 550px;
-    }
-    .assiette {
-        line-height: 1.2;
-        align-items: baseline;
-    }
-    #entrees, #plats, #desserts {
-        padding: 0;
-    }
-}
-
-@media (max-width: 570px){
-    #menu {
-        margin-bottom: 19%;
-        width: 475px;
-    }
-    #nom_restaurant {
-        padding-top: 6%;
-    }
-    .trait {
-        width: 100px;
-    }
-    .assiette {
-        width: 95%;
-        font-size: 100%;
-    }
-    .prix {
-        padding-left: 2%;
-    }
-}
-
-@media (max-width: 520px){
-    #menu {
-        width: 400px;
-        margin-bottom: 22%;
-    }
-    h3 {
-        font-size: 100%;
-    }
-}
-
-@media (max-width: 450px){
-    #menu {
-        width: 350px;
-        margin-bottom: 25%;
-    }
-    h2 {
-        font-size: 150%;
-    }
-    h3 {
-        font-size: 95%;
-    }
-    .trait {
-        width: 90px;
-    }
-}
-
-@media (max-width: 380px){
-    #menu {
-        width: 300px;
-        margin-bottom: 28%;
-    }
-    h2 {
-        font-size: 130%;
-    }
-    .trait {
-        width: 70px;
-    }
-}
-
-@media (max-width: 320px){
-    #menu {
-        width: 250px;
-        margin-bottom: 31%;
-    }
-    h2 {
-        font-size: 110%;
-    }
-    h3 {
-        font-size: 85%;
-    }
-    .trait {
-        width: 60px;
-    }
-    .assiette {
-        font-size: 85%;
-    }
-}
-
 
 
 

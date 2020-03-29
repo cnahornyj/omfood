@@ -1,6 +1,31 @@
-
 $couleur-primaire: #579c87;
 $couleur-secondaire: #fdcb46;
+$couleur-bordure-header-footer: #a1c181;
+
+body { 
+    margin: 0;
+}
+
+header, footer {
+    font-family: Helvetica;
+    background-color:$couleur-primaire;
+    color: $couleur-secondaire;
+}
+
+header {
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 2% 0 2% 0;
+        border-bottom: 0.5px solid $couleur-bordure-header-footer; 
+        a {
+            text-decoration: none;
+            color: $couleur-secondaire;
+            -webkit-text-stroke: 0.5px;
+            -webkit-text-stroke-color: darken($couleur-secondaire, 20%);
+        }
+    }
+}
 
 #mentions_légales {
     width: 650px;
@@ -50,6 +75,26 @@ p {
     text-align: center;
     span {
         font-weight: bold;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $couleur-primaire;
+    border-top: 0.5px solid $couleur-bordure-header-footer;
+    a .mentions_contact {
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: $couleur-secondaire;
+        display: inline-block;
+        animation: wiggle 1500ms infinite;
     }
 }
 
