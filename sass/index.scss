@@ -54,6 +54,8 @@ header {
         a {
             text-decoration: none;
             color: #fdcb46;
+            -webkit-text-stroke: 0.5px;
+            -webkit-text-stroke-color: #e5ac1b;
         }
     }
 }
@@ -200,7 +202,7 @@ header {
 
 #prochainement {
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     button {
         font-family: Helvetica;
         font-size: 130%;
@@ -253,14 +255,16 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: #fdcb46;
     background-color: #579c87;
     border-top: 0.5px solid #a1c181;
-    .mentions_contact {
-        padding: 0 2% 0 2%;
+    a .mentions_contact {
+        text-decoration: none;
+        text-align: center;
+        color: #fdcb46;
+        padding: 0 1% 0 1%;
         display: inline-block;
         animation: wiggle 1500ms infinite;
-}
+    }
 }
 
 @keyframes wiggle {

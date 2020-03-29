@@ -30,6 +30,12 @@
     src: url("../fonts/kaushan/Fonts/kaushanscript-regular-webfont.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: 'devonshire';
+    src: url("../fonts/devonshire/Fonts/devonshire-regular-webfont.woff") format("woff");
+    src: url("../fonts/devonshire/Fonts/devonshire-regular-webfont.woff2") format("woff2");
+}
+
 body { 
     margin: 0;
 }
@@ -49,6 +55,8 @@ header {
         a {
             text-decoration: none;
             color: #fdcb46;
+            -webkit-text-stroke: 0.5px;
+            -webkit-text-stroke-color: #e5ac1b;
         }
     }
 }
@@ -59,7 +67,7 @@ header {
     font-size: 155%;
 }
 
-#menu {
+#menu, #mentions_légales {
     width: 650px;
     height: 100%;
     margin: auto;
@@ -106,7 +114,7 @@ h3 {
 
 .assiette {
     flex-direction: row;
-    line-height: 0.3;
+    line-height: 0.85;
 }
 
 .prix {
@@ -123,51 +131,32 @@ footer {
     bottom: 0;
     width: 100%;
     display: flex;
-    color: #fdcb46;
+    justify-content: space-between;
     background-color: #579c87;
     border-top: 0.5px solid #a1c181;
-    .mentions_contact {
-        padding: 0 2% 0 2%;
+    a .mentions_contact {
+        text-decoration: none;
+        text-align: center;
+        color: #fdcb46;
+        padding: 0 1% 0 1%;
         display: inline-block;
-        animation: wiggle 7000ms infinite;
+        animation: wiggle 1500ms infinite;
     }
 }
 
 @keyframes wiggle {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-  
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
-  
-  @-webkit-keyframes wiggle {
-    10%, 90% {
-        transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    
-    30%, 50%, 70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-    
-    40%, 60% {
-        transform: translate3d(4px, 0, 0);
-    }
-  }
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(2deg)}
+    50%{transform: rotate(-2deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-webkit-keyframes wiggle {
+    0%{transform: rotate(0deg)}
+    25%{transform: rotate(2deg)}
+    50%{transform: rotate(-2deg)}
+    100%{transform: rotate(0deg)}
+}
 
 @media (max-width: 1250px){
     #menu {
