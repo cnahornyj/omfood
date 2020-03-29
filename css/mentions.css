@@ -19,7 +19,7 @@ h2 {
   text-align: center;
   font-weight: bold;
   -webkit-text-stroke: 0.5px;
-  -webkit-text-stroke-color: #498271;
+  -webkit-text-stroke-color: #325b4e;
 }
 
 h3 {
@@ -30,7 +30,7 @@ h3 {
   background-size: none;
   transition: none;
   -webkit-text-stroke: 0.5px;
-  -webkit-text-stroke-color: #498271;
+  -webkit-text-stroke-color: #3c6b5d;
 }
 h3:hover {
   background-size: none;

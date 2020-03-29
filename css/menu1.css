@@ -23,6 +23,10 @@ h3 {
   padding: 2% 0 2% 0;
 }
 
+p {
+  font-size: 110%;
+}
+
 .trait {
   width: 200px;
 }

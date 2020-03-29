@@ -1,3 +1,7 @@
+
+$couleur-primaire: #579c87;
+$couleur-secondaire: #fdcb46;
+
 #mentions_légales {
     width: 650px;
     height: 100%;
@@ -14,22 +18,22 @@
 
 h2 {
     font-family: Helvetica;
-    color: #579c87;
+    color: $couleur-primaire;
     text-align: center;
     font-weight: bold;
     -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: #498271;
+    -webkit-text-stroke-color: darken($couleur-primaire, 20%);
 }
 
 h3 {
-    color:#579c87;
+    color: $couleur-primaire;
     text-decoration: underline;
     text-align: left;
     background: none;
     background-size: none;
     transition: none;
     -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: #498271;
+    -webkit-text-stroke-color: darken($couleur-primaire, 15%);
     &:hover {
         background-size: none;
     }
@@ -38,7 +42,7 @@ h3 {
 p {
     text-align: justify;
     span {
-        color: #fdcb46;
+        color: $couleur-secondaire;
     }
 }
 

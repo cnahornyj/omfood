@@ -34,14 +34,18 @@
     src: url("../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff2") format('woff2');
 }
 
+$couleur-primaire: #579c87;
+$couleur-secondaire: #fdcb46;
+$couleur-bordure-header-footer: #a1c181;
+
 body { 
     margin: 0;
 }
 
 header, footer {
     font-family: Helvetica;
-    background-color:#579c87;
-    color: #fdcb46;
+    background-color: $couleur-primaire;
+    color: $couleur-secondaire;
 }
 
 header {
@@ -50,12 +54,12 @@ header {
         text-align: center;
         margin: 0;
         padding: 2% 0 2% 0;
-        border-bottom: 0.5px solid #a1c181; 
+        border-bottom: 0.5px solid $couleur-bordure-header-footer; 
         a {
             text-decoration: none;
-            color: #fdcb46;
+            color: $couleur-secondaire;
             -webkit-text-stroke: 0.5px;
-            -webkit-text-stroke-color: #e5ac1b;
+            -webkit-text-stroke-color: darken($couleur-secondaire, 20%);
         }
     }
 }
@@ -206,8 +210,8 @@ header {
     button {
         font-family: Helvetica;
         font-size: 130%;
-        color: #fdcb46;
-        background-color: #579c87;
+        color: $couleur-secondaire;
+        background-color: $couleur-primaire;
         border-radius: 5px 5px 5px 5px;
         -moz-border-radius: 5px 5px 5px 5px;
         -webkit-border-radius: 5px 5px 5px 5px;
@@ -255,12 +259,12 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #579c87;
-    border-top: 0.5px solid #a1c181;
+    background-color: $couleur-primaire;
+    border-top: 0.5px solid $couleur-bordure-header-footer;
     a .mentions_contact {
         text-decoration: none;
         text-align: center;
-        color: #fdcb46;
+        color: $couleur-secondaire;
         padding: 0 1% 0 1%;
         display: inline-block;
         animation: wiggle 1500ms infinite;
