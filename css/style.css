@@ -165,17 +165,17 @@ footer a .mentions_contact {
 }
 @media (max-width: 1250px) {
   #menu {
-    margin-bottom: 7%;
+    margin-bottom: 10%;
   }
 }
 @media (max-width: 950px) {
   #menu {
-    margin-bottom: 10%;
+    margin-bottom: 13%;
   }
 }
 @media (max-width: 750px) {
   #menu {
-    margin-bottom: 12%;
+    margin-bottom: 16%;
     width: 550px;
   }
 
@@ -190,7 +190,7 @@ footer a .mentions_contact {
 }
 @media (max-width: 570px) {
   #menu {
-    margin-bottom: 12%;
+    margin-bottom: 19%;
     width: 475px;
   }
 
@@ -214,7 +214,7 @@ footer a .mentions_contact {
 @media (max-width: 520px) {
   #menu {
     width: 400px;
-    margin-bottom: 20%;
+    margin-bottom: 22%;
   }
 
   h3 {
@@ -224,6 +224,7 @@ footer a .mentions_contact {
 @media (max-width: 450px) {
   #menu {
     width: 350px;
+    margin-bottom: 25%;
   }
 
   h2 {
@@ -241,6 +242,7 @@ footer a .mentions_contact {
 @media (max-width: 380px) {
   #menu {
     width: 300px;
+    margin-bottom: 28%;
   }
 
   h2 {
@@ -254,6 +256,7 @@ footer a .mentions_contact {
 @media (max-width: 320px) {
   #menu {
     width: 250px;
+    margin-bottom: 31%;
   }
 
   h2 {

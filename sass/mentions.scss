@@ -49,25 +49,43 @@ p {
     }
 }
 
+@media (min-width: 950px){
+    #mentions_légales {
+        margin-bottom: 8%;
+    }
+}
+
+@media (max-width: 850px){
+    #mentions_légales {
+        margin-bottom: 11%;
+    }
+}
+
 @media (max-width: 750px){
     #mentions_légales {
         width: 550px;
+        margin-bottom: 14%;
     }
 }
 
 @media (max-width: 650px){
     #mentions_légales {
         width: 450px;
+        margin-bottom: 17%;
     }
 }
 
 @media (max-width: 550px){
     #mentions_légales {
         width: 350px;
+        margin-bottom: 20%;
     }
 }
 
 @media (max-width: 450px){
+    #mentions_légales {
+        margin-bottom: 23%;
+    }
     h2 {
         font-size: 130%;
     }
@@ -82,6 +100,7 @@ p {
 @media (max-width: 380px){
     #mentions_légales {
         width: 200px;
+        margin-bottom: 26%;
     }
     h2 {
         font-size: 110%;
