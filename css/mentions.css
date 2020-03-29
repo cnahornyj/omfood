@@ -2,10 +2,10 @@
 #mentions_légales {
   margin: auto;
   margin-top: 3%;
+  margin-bottom: 8%;
   font-family: Helvetica;
   line-height: 1.5;
   padding: 2%;
-  padding-bottom: none;
 }
 
 h2 {
@@ -24,6 +24,8 @@ h3 {
   background: none;
   background-size: none;
   transition: none;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: #498271;
 }
 h3:hover {
   background-size: none;
@@ -34,6 +36,59 @@ p {
 }
 p span {
   color: #fdcb46;
+}
+
+#adress_center {
+  text-align: center;
+}
+#adress_center span {
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  #mentions_légales {
+    width: 550px;
+  }
+}
+@media (max-width: 650px) {
+  #mentions_légales {
+    width: 450px;
+  }
+}
+@media (max-width: 550px) {
+  #mentions_légales {
+    width: 350px;
+  }
+}
+@media (max-width: 450px) {
+  h2 {
+    font-size: 130%;
+  }
+
+  h3 {
+    font-size: 100%;
+  }
+
+  p {
+    font-size: 90%;
+  }
+}
+@media (max-width: 380px) {
+  #mentions_légales {
+    width: 200px;
+  }
+
+  h2 {
+    font-size: 110%;
+  }
+
+  h3 {
+    font-size: 85%;
+  }
+
+  p {
+    font-size: 80%;
+  }
 }
 
 /*# sourceMappingURL=mentions.css.map */
