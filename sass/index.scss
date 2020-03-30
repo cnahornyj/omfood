@@ -72,7 +72,7 @@ header {
     margin: auto;
     width: 80%;
     #menu1 {
-        background-color: #fcdfdb;
+        background-color: darken(#fcdfdb, 1%);
         img {
             top: 36%;
             width: 30px;
@@ -91,7 +91,7 @@ header {
         }    
     }
     #menu2 {
-        background-color: #fff5fe;
+        background-color: darken(#fff5fe, 1%);
         h2 {
             top: 38%;
             font-family: 'croissant';
@@ -110,7 +110,7 @@ header {
         }
     }
     #menu3 {
-        background-color: #f9f9f9;
+        background-color: darken(#f9f9f9, 1%);
         h2 {
             top: 37%;
             font-family: 'parisienne';
@@ -128,7 +128,7 @@ header {
         }
     }
     #menu4 {
-        background-color: #fdfffd;
+        background-color: darken(#fdfffd, 1%);
         h2 {
             top: 35%;
             font-family: 'kaushan';
