@@ -34,6 +34,12 @@
     src: url("../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff2") format('woff2');
 }
 
+@font-face {
+    font-family: 'segoe';
+    src: url("../fonts/segoe/segoe.woff") format('woff');
+    src: url("../fonts/segoe/segoe.woff2") format('woff2');
+}
+
 $couleur-primaire: #579c87;
 $couleur-secondaire: #fdcb46;
 $couleur-bordure-header-footer: #a1c181;
@@ -86,7 +92,7 @@ header {
         }
         h3 {
             top: 52%;
-            font-family: 'kalam';
+            font-family: 'segoe';
             color: #3c1218;
         }    
     }
@@ -97,14 +103,15 @@ header {
             font-family: 'croissant';
             font-size: 85%;
             color: #c77529;
-            background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
-            background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+            letter-spacing: -0.5px;
+            background: -o-linear-gradient(left, #c77529 0%, #8f5bfe 100%);
+            background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         h3 {
-            top: 51%;
-            font-size: 90%;
+            top: 49%;
+            font-size: 130%;
             font-family: 'charissil';
             color: #c77412;
         }
@@ -123,6 +130,7 @@ header {
         }
         h3 {
             top: 50%;
+            font-size: 130%;
             font-family: 'comics';
             color: #0887fb;
         }
@@ -130,9 +138,9 @@ header {
     #menu4 {
         background-color: darken(#fdfffd, 1%);
         h2 {
-            top: 35%;
+            top: 37%;
             font-family: 'kaushan';
-            font-size: 130%;
+            font-size: 110%;
             color: #3d9339;
             background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
             background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
@@ -140,6 +148,7 @@ header {
             -webkit-text-fill-color: transparent;
         }
         h3 {
+            font-size: 130%;
             top: 50%;
             font-family: 'comics';
             color: #92cd7c;
