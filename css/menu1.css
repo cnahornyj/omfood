@@ -1,15 +1,15 @@
-h2 {
-  font-family: "devonshire";
-  margin-top: -20px;
+#menu {
+  color: #3d1319;
+  background-color: #fcdfdb;
 }
 
 #nom_restaurant {
   padding-top: 5%;
 }
 
-#menu {
-  color: #3d1319;
-  background-color: #fcdfdb;
+h2 {
+  font-family: "devonshire";
+  margin-top: -20px;
 }
 
 .assiette {

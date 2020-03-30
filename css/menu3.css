@@ -1,3 +1,7 @@
+#menu {
+  background-color: #fdfefd;
+}
+
 h2 {
   font-family: "parisienne";
   color: #0431df;
@@ -7,21 +11,13 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-#menu {
-  background-color: #fdfefd;
+.soustitre {
+  width: 90%;
 }
 
 .assiette {
   width: 75%;
   font-family: "comics";
-}
-
-.soustitre {
-  width: 90%;
-}
-
-.trait {
-  width: 200px;
 }
 
 /*# sourceMappingURL=menu3.css.map */

@@ -1,4 +1,8 @@
- h2 { 
+#menu {
+    background-color: #fff5fe;
+}
+
+h2 { 
     font-family: 'croissant';
     font-size: 200%;
     color: #c77529;
@@ -8,24 +12,12 @@
     -webkit-text-fill-color: transparent;
 }
 
-#menu {
-    background-color: #fff5fe;
-}
-
 h3, #entrees, #plats, #desserts, .assiette  {
     font-family: 'cultura';
 }
 
 #entrees, #plats, #desserts {
     padding-bottom: 5%;
-}
-
-.assiette {
-    width: 75%;
-}
-
-.soustitre {
-    width: 90%;
 }
 
 #entrees {
@@ -38,4 +30,42 @@ h3, #entrees, #plats, #desserts, .assiette  {
 
 #desserts {
     color: #6b56a3;
+}
+
+.soustitre {
+    width: 90%;
+}
+
+.assiette {
+    width: 75%;
+}
+
+@media all and (max-width: 750px) {
+    h2 {
+        font-size: 190%;;
+    }
+}
+
+@media all and (max-width: 650px) {
+    h2 {
+        font-size: 180%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    h2 {
+        font-size: 170%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    h2 {
+        font-size: 150%;
+    }
+}
+
+@media all and (max-width: 350px) {
+    h2 {
+        font-size: 130%;
+    }
 }

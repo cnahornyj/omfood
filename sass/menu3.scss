@@ -1,4 +1,8 @@
- h2 { 
+#menu {
+    background-color: #fdfefd;
+}
+ 
+h2 { 
     font-family: 'parisienne';
     color: #0431df;
     background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
@@ -7,19 +11,11 @@
     -webkit-text-fill-color: transparent;
 }
 
-#menu {
-    background-color: #fdfefd;
+.soustitre {
+    width: 90%;
 }
 
 .assiette {
     width: 75%;
     font-family: "comics";
-}
-
-.soustitre {
-    width: 90%;
-}
-
-.trait {
-    width: 200px;
 }
