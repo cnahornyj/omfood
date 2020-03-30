@@ -64,18 +64,18 @@ header h1 a {
   background-color: #fcdfdb;
 }
 #menus #menu1 img {
-  top: 40%;
+  top: 36%;
   width: 30px;
   height: 30px;
 }
 #menus #menu1 h2 {
-  top: 45%;
+  top: 42%;
   font-family: "devonshire";
   font-size: 125%;
   color: #3c1218;
 }
 #menus #menu1 h3 {
-  top: 55%;
+  top: 52%;
   font-family: "kalam";
   color: #3c1218;
 }
@@ -83,9 +83,9 @@ header h1 a {
   background-color: #fff5fe;
 }
 #menus #menu2 h2 {
-  top: 40%;
+  top: 38%;
   font-family: "croissant";
-  font-size: 95%;
+  font-size: 85%;
   color: #c77529;
   background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
   background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
@@ -93,7 +93,8 @@ header h1 a {
   -webkit-text-fill-color: transparent;
 }
 #menus #menu2 h3 {
-  top: 50%;
+  top: 51%;
+  font-size: 90%;
   font-family: "charissil";
   color: #c77412;
 }
@@ -101,7 +102,7 @@ header h1 a {
   background-color: #f9f9f9;
 }
 #menus #menu3 h2 {
-  top: 35%;
+  top: 37%;
   font-family: "parisienne";
   font-size: 120%;
   color: #0431df;
