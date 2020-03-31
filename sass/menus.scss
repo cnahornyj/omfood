@@ -90,7 +90,6 @@ header {
         font-weight: lighter;
         h2 {
             font-weight: lighter;
-            font-size: 250%;
             padding: 4% 0 4% 0;
             margin-block-end: 0;
             text-align: center;
@@ -137,7 +136,7 @@ footer {
     justify-content: space-between;
     background-color: $couleur-primaire;
     border-top: 0.5px solid $couleur-bordure-header-footer;
-    a .mentions_contact {
+    a {
         margin-inline-start: 10px;
         margin-inline-end: 10px;
         text-decoration: none;
@@ -177,6 +176,8 @@ footer {
 .nom_restaurant-titre-la-note-enchantee {
     font-family: 'devonshire';
     margin-top: 5px;
+    font-size: 250%;
+    margin-block-end: 0;
 }
 
 .h3-la-note-enchantee {
@@ -248,6 +249,7 @@ img {
 
 .nom_restaurant-titre-le-delice-des-papilles {
     font-family: 'parisienne';
+    font-size: 250%;
     color: #0431df;
     background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
     background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
@@ -267,6 +269,7 @@ img {
 
 .nom_restaurant-titre-la-palette-du-gout {
     font-family: 'kaushan';
+    font-size: 250%;
     color: #3d9339;
     background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
     background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
@@ -277,3 +280,100 @@ img {
 .h3-la-palette-du-gout, .assiette-la-palette-du-gout {
     font-family: 'comics';
 }
+
+@media (min-width: 651px) and (max-width: 750px){
+    .menu {
+        width: 550px;
+        margin-bottom: 12%;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 650px){
+    .menu {
+        width: 500px;
+        margin-bottom: 13%;
+    }
+    .nom_restaurant-titre-la-note-enchantee, .nom_restaurant-titre-le-delice-des-papilles, .nom_restaurant-titre-la-palette-du-gout {
+        font-size: 220%;
+    }
+    .nom_restaurant-titre-le-chic-a-la-francaise {
+        font-style: 180%;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 550px){
+    .menu {
+        width: 450px;
+        margin-bottom: 16%;
+    }
+    .nom_restaurant-titre-la-note-enchantee, .nom_restaurant-titre-le-delice-des-papilles, .nom_restaurant-titre-la-palette-du-gout {
+        font-size: 200%;
+    }
+    .nom_restaurant-titre-le-chic-a-la-francaise {
+        font-style: 160%;
+    }
+    .prix {
+        padding-left: 2%;
+    }
+    .menu .soustitre .trait {
+        width: 100px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 520px){
+    .menu {
+        width: 400px;
+        margin-bottom: 18%;
+    }
+    .nom_restaurant-titre-la-note-enchantee, .nom_restaurant-titre-le-delice-des-papilles, .nom_restaurant-titre-la-palette-du-gout {
+        font-size: 180%;
+    }
+    .nom_restaurant-titre-le-chic-a-la-francaise {
+        font-style: 140%;
+    }
+    .prix {
+        padding-left: 2%;
+    }
+    .menu .soustitre .trait {
+        width: 100px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 450px){
+    .menu {
+        width: 350px;
+        margin-bottom: 20%;
+    }
+    .nom_restaurant-titre-la-note-enchantee, .nom_restaurant-titre-le-delice-des-papilles, .nom_restaurant-titre-la-palette-du-gout {
+        font-size: 160%;
+    }
+    .nom_restaurant-titre-le-chic-a-la-francaise {
+        font-style: 120%;
+    }
+    .prix {
+        padding-left: 2%;
+    }
+    .menu .soustitre .trait {
+        width: 100px;
+    }
+}
+
+@media (max-width: 400px){
+    .menu {
+        width: 300px;
+        margin-bottom: 23%;
+    }
+    .nom_restaurant-titre-la-note-enchantee, .nom_restaurant-titre-le-delice-des-papilles, .nom_restaurant-titre-la-palette-du-gout {
+        font-size: 140%;
+    }
+    .nom_restaurant-titre-le-chic-a-la-francaise {
+        font-style: 100%;
+    }
+    .prix {
+        padding-left: 2%;
+    }
+    .menu .soustitre .trait {
+        width: 75px;
+    }
+}
+
