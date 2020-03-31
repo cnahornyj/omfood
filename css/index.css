@@ -35,6 +35,7 @@
 }
 body {
   margin: 0;
+  height: 100%;
 }
 
 header, footer {
@@ -289,40 +290,14 @@ footer a .mentions_contact {
     transform: rotate(0deg);
   }
 }
-@media (max-width: 700px) {
-  #menus {
-    padding-top: 5%;
-  }
-
+@media (max-width: 937px) {
   #prochainement {
-    margin: 2% 0 15% 0;
+    margin-bottom: 15%;
   }
 }
-@media (max-width: 430px) {
+@media (min-width: 938px) and (max-width: 1249px) {
   #prochainement {
-    margin: 2% 0 18% 0;
-  }
-
-  #menu1, #menu2, #menu3, #menu4 {
-    margin-bottom: 20%;
-  }
-}
-@media (max-width: 315px) {
-  #prochainement {
-    margin: 2% 0 20% 0;
-  }
-}
-@media (max-width: 255px) {
-  #menu1, #menu2, #menu3, #menu4 {
-    margin-bottom: 30%;
-  }
-
-  #prochainement {
-    margin: 2% 0 30% 0;
-  }
-
-  footer {
-    text-align: center;
+    margin-bottom: 10%;
   }
 }
 

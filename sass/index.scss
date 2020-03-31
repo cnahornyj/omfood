@@ -46,6 +46,7 @@ $couleur-bordure-header-footer: #a1c181;
 
 body { 
     margin: 0;
+    height: 100%;
 }
 
 header, footer {
@@ -294,43 +295,16 @@ footer {
     100%{transform: rotate(0deg)}
 }
 
-$breakpoint: 700px;
-@media (max-width: $breakpoint){
-    #menus {
-        padding-top: 5%;
-    }
+@media (max-width: 937px) {
     #prochainement {
-        margin: 2% 0 15% 0;
+        margin-bottom: 15%;
     }
 }
 
-$breakpoint1: 430px;
-@media (max-width: $breakpoint1){
+@media (min-width: 938px) and (max-width: 1249px) {
     #prochainement {
-        margin: 2% 0 18% 0;
-    }
-    #menu1, #menu2, #menu3, #menu4 {
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
 }
 
-$breakpoint2: 315px;
-@media (max-width: $breakpoint2){
-    #prochainement {
-        margin: 2% 0 20% 0;
-    }
-}
-
-$breakpoint3: 255px;
-@media (max-width: $breakpoint3){
-    #menu1, #menu2, #menu3, #menu4 {
-        margin-bottom: 30%;
-    }
-    #prochainement {
-        margin: 2% 0 30% 0;
-    }
-    footer {
-        text-align: center;
-    }
-}
 
