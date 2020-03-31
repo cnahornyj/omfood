@@ -64,7 +64,6 @@ header h1 a {
   justify-content: space-evenly;
   padding-top: 5%;
   margin: auto;
-  width: 80%;
 }
 .menus .menus__menu-la-note-enchantee, .menus .menus__menu-le-chic-a-la-francaise, .menus .menus__menu-le-delice-des-papilles, .menus .menus__menu-la-palette-du-gout {
   width: 250px;
@@ -124,7 +123,7 @@ header h1 a {
   font-size: 85%;
   color: #c77529;
   letter-spacing: -0.5px;
-  background: -o-linear-gradient(left, #c77529 0%, #8f5bfe 100%);
+  background: -o-linear-gradient(right, #c77529 0%, #8f5bfe 100%);
   background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -289,23 +288,22 @@ footer a {
     transform: rotate(0deg);
   }
 }
-@media (max-width: 937px) {
-  #prochainement {
-    margin-bottom: 15%;
-  }
-}
-@media (min-width: 938px) and (max-width: 1249px) {
-  #prochainement {
-    margin-bottom: 10%;
-  }
-
-  #menus {
+@media (max-width: 1150px) {
+  .menus {
     width: 60%;
   }
+
+  .prochainement {
+    margin-bottom: 10%;
+  }
 }
-@media (min-width: 1250px) {
-  #prochainement {
-    margin-bottom: 7%;
+@media (max-width: 830px) {
+  .menus {
+    width: 80%;
+  }
+
+  .prochainement {
+    margin-bottom: 10%;
   }
 }
 

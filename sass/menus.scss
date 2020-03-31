@@ -65,6 +65,12 @@ header {
     }
 }
 
+.menu__titre {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 155%;
+}
+
 .menu {
     width: 650px;
     height: 100%;
@@ -74,67 +80,52 @@ header {
     -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
     -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
     box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-}
-
-.menu__titre {
-    text-align: center;
-    font-family: Helvetica;
-    font-size: 155%;
-}
-
-.nom_restaurant {
-    flex-direction: column;
-    align-items: center;
-    font-weight: lighter;
-}
-
-h2 {
-    font-weight: lighter;
-    font-size: 250%;
-    padding: 4% 0 4% 0;
-    margin-block-end: 0;
-    text-align: center;
-}
-
-.nom_restaurant, .soustitre, .assiette {
+    .nom_restaurant, .soustitre, .assiette {
     display: flex;
     align-items: center;
-}
-
-.soustitre {
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-}
-
-.trait {
-    width: 175px;
-}
-
-h3 {
-    font-family: 'comics';
-    background: linear-gradient(to top, rgba(black,0.5) 0%, rgba(black,0.5) 4px, transparent 5px) no-repeat;
-    background-size: 0% 100%;
-    transition: background-size 300ms;
-    text-align: center;
-    &:hover {
-        background-size: 100% 100%;
     }
-}
-
-.assiette {
-    font-size: 105%;
-    flex-direction: row;
-    line-height: 1;
-    width: 70%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.prix {
-    font-weight: bold;
+    .nom_restaurant {
+        flex-direction: column;
+        align-items: center;
+        font-weight: lighter;
+        h2 {
+            font-weight: lighter;
+            font-size: 250%;
+            padding: 4% 0 4% 0;
+            margin-block-end: 0;
+            text-align: center;
+        }
+    }
+    .soustitre {
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        h3 {
+            background: linear-gradient(to top, rgba(black,0.5) 0%, rgba(black,0.5) 4px, transparent 5px) no-repeat;
+            background-size: 0% 100%;
+            transition: background-size 300ms;
+            text-align: center;
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+        .trait {
+        width: 150px;
+        }
+    }
+    .assiette {
+        font-size: 105%;
+        flex-direction: row;
+        line-height: 1;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: baseline;
+        .prix {
+        font-weight: bold;
+        }
+    }
 }
 
 footer {
@@ -185,18 +176,20 @@ footer {
 
 .nom_restaurant-titre-la-note-enchantee {
     font-family: 'devonshire';
-    margin-top: -20px;
+    margin-top: 5px;
+}
+
+.h3-la-note-enchantee {
+    font-family: 'comics';
 }
 
 .assiette__la-note-enchantee {
     font-family: "comics";
-    width: 75%;
 }
 
 img {
     width: 50px;
     height: 50px;
-
 }
 
 #signature {
@@ -227,12 +220,12 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.soustitre-le-chic-a-la-francaise {
-    width: 90%;
-}
-
 .entrees-le-chic-a-la-francaise, .plats-le-chic-a-la-francaise, .desserts-le-chic-a-la-francaise {
     padding-bottom: 5%;
+}
+
+.h3-le-chic-a-la-francaise, .assiette-le-chic-a-la-francaise {
+    font-family: 'cultura';
 }
 
 .entrees-le-chic-a-la-francaise {
@@ -247,19 +240,10 @@ img {
     color: #6b56a3;
 }
 
-.assiette-le-chic-a-la-francaise {
-    font-family: 'cultura';
-    width: 75%;
-}
-
 /* Menu "Le délice des papilles" */
 
 .menu-le-delice-des-papilles {
     background-color: #fdfefd;
-}
-
-.h3-le-chic-a-la-francaise {
-    font-family: 'cultura';
 }
 
 .nom_restaurant-titre-le-delice-des-papilles {
@@ -271,13 +255,8 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.soustitre-le-delice-des-papilles {
-    width: 90%;
-}
-
-.assiette-le-delice-des-papilles {
-    width: 75%;
-    font-family: "comics";
+.h3-le-delice-des-papilles, .assiette-le-delice-des-papilles {
+    font-family: 'comics';
 }
 
 /* Menu "La palette du goût" */
@@ -295,11 +274,6 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.soustitre-la-palette-du-gout {
-    width: 90%;
-}
-
-.assiette-la-palette-du-gout {
-    width: 80%;
-    font-family: "comics";
+.h3-la-palette-du-gout, .assiette-la-palette-du-gout {
+    font-family: 'comics';
 }
