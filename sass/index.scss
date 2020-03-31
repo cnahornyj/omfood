@@ -71,17 +71,47 @@ header {
     }
 }
 
-#menus {
+.menus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 5%;
     margin: auto;
     width: 80%;
-    #menu1 {
+    .menus__menu-la-note-enchantee, .menus__menu-le-chic-a-la-francaise, .menus__menu-le-delice-des-papilles, .menus__menu-la-palette-du-gout  {
+        width: 250px;
+        height: 350px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 8%;
+        -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
+        -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
+        box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
+        a {
+            text-decoration: none;
+            .menus_menu-contenu {
+                width: 250px;
+                height: 350px;
+                font-size: 115%;
+                &:hover {
+                    -webkit-animation: scale-up-center 2000ms forwards;
+                    animation: scale-up-center 2000ms forwards;
+                }
+                h2, h3 {
+                    position: absolute;
+                    transform: translateY(-50%);
+                    width: 100%;
+                }
+                img {
+                    position: relative;
+                }
+            }
+        }
+    }
+    .menus__menu-la-note-enchantee {
         background-color: darken(#fcdfdb, 1%);
         img {
-            top: 36%;
+            top: 34%;
             width: 30px;
             height: 30px;
         }
@@ -97,7 +127,7 @@ header {
             color: #3c1218;
         }    
     }
-    #menu2 {
+    .menus__menu-le-chic-a-la-francaise {
         background-color: darken(#fff5fe, 1%);
         h2 {
             top: 38%;
@@ -117,7 +147,7 @@ header {
             color: #c77412;
         }
     }
-    #menu3 {
+    .menus__menu-le-delice-des-papilles {
         background-color: darken(#f9f9f9, 1%);
         h2 {
             top: 37%;
@@ -136,7 +166,7 @@ header {
             color: #0887fb;
         }
     }
-    #menu4 {
+    .menus__menu-la-palette-du-gout {
         background-color: darken(#fdfffd, 1%);
         h2 {
             top: 37%;
@@ -155,38 +185,6 @@ header {
             color: #92cd7c;
         }
     }
-}
-
-#menu1, #menu2, #menu3, #menu4 {
-    width: 250px;
-    height: 350px;
-    position: relative;
-    text-align: center;
-    margin-bottom: 8%;
-    -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    img, h2, h3 {
-        position: absolute;
-        transform: translateY(-50%);
-        width: 100%;
-    }
-    img {
-        position: relative;
-        width: 30px;
-        height: 30px;
-    }
-}
-
-.contenu {
-    width: 250px;
-    height: 350px;
-    font-size: 115%;
-}
-
-.contenu:hover {
-    -webkit-animation: scale-up-center 2000ms forwards;
-    animation: scale-up-center 2000ms forwards;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -215,7 +213,7 @@ header {
     }
   }
 
-#prochainement {
+.prochainement {
     text-align: center;
     button {
         font-family: Helvetica;
@@ -270,9 +268,10 @@ footer {
     display: flex;
     justify-content: space-between;
     border-top: 0.5px solid $couleur-bordure-header-footer;
-    a .mentions_contact {
+    a {
         margin-inline-start: 10px;
         margin-inline-end: 10px;
+        margin: 1%;
         text-decoration: none;
         text-align: center;
         color: $couleur-secondaire;
@@ -304,6 +303,15 @@ footer {
 @media (min-width: 938px) and (max-width: 1249px) {
     #prochainement {
         margin-bottom: 10%;
+    }
+    #menus {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1250px) {
+    #prochainement {
+        margin-bottom: 7%;
     }
 }
 

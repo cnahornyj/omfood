@@ -58,7 +58,7 @@ header h1 a {
   -webkit-text-stroke-color: #dba002;
 }
 
-#menus {
+.menus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -66,29 +66,59 @@ header h1 a {
   margin: auto;
   width: 80%;
 }
-#menus #menu1 {
+.menus .menus__menu-la-note-enchantee, .menus .menus__menu-le-chic-a-la-francaise, .menus .menus__menu-le-delice-des-papilles, .menus .menus__menu-la-palette-du-gout {
+  width: 250px;
+  height: 350px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 8%;
+  -webkit-box-shadow: 0px 0px 8px 6px #e8e8e8;
+  -moz-box-shadow: 0px 0px 8px 6px #e8e8e8;
+  box-shadow: 0px 0px 8px 6px #e8e8e8;
+}
+.menus .menus__menu-la-note-enchantee a, .menus .menus__menu-le-chic-a-la-francaise a, .menus .menus__menu-le-delice-des-papilles a, .menus .menus__menu-la-palette-du-gout a {
+  text-decoration: none;
+}
+.menus .menus__menu-la-note-enchantee a .menus_menu-contenu, .menus .menus__menu-le-chic-a-la-francaise a .menus_menu-contenu, .menus .menus__menu-le-delice-des-papilles a .menus_menu-contenu, .menus .menus__menu-la-palette-du-gout a .menus_menu-contenu {
+  width: 250px;
+  height: 350px;
+  font-size: 115%;
+}
+.menus .menus__menu-la-note-enchantee a .menus_menu-contenu:hover, .menus .menus__menu-le-chic-a-la-francaise a .menus_menu-contenu:hover, .menus .menus__menu-le-delice-des-papilles a .menus_menu-contenu:hover, .menus .menus__menu-la-palette-du-gout a .menus_menu-contenu:hover {
+  -webkit-animation: scale-up-center 2000ms forwards;
+  animation: scale-up-center 2000ms forwards;
+}
+.menus .menus__menu-la-note-enchantee a .menus_menu-contenu h2, .menus .menus__menu-la-note-enchantee a .menus_menu-contenu h3, .menus .menus__menu-le-chic-a-la-francaise a .menus_menu-contenu h2, .menus .menus__menu-le-chic-a-la-francaise a .menus_menu-contenu h3, .menus .menus__menu-le-delice-des-papilles a .menus_menu-contenu h2, .menus .menus__menu-le-delice-des-papilles a .menus_menu-contenu h3, .menus .menus__menu-la-palette-du-gout a .menus_menu-contenu h2, .menus .menus__menu-la-palette-du-gout a .menus_menu-contenu h3 {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.menus .menus__menu-la-note-enchantee a .menus_menu-contenu img, .menus .menus__menu-le-chic-a-la-francaise a .menus_menu-contenu img, .menus .menus__menu-le-delice-des-papilles a .menus_menu-contenu img, .menus .menus__menu-la-palette-du-gout a .menus_menu-contenu img {
+  position: relative;
+}
+.menus .menus__menu-la-note-enchantee {
   background-color: #fcdbd6;
 }
-#menus #menu1 img {
-  top: 36%;
+.menus .menus__menu-la-note-enchantee img {
+  top: 34%;
   width: 30px;
   height: 30px;
 }
-#menus #menu1 h2 {
+.menus .menus__menu-la-note-enchantee h2 {
   top: 42%;
   font-family: "devonshire";
   font-size: 125%;
   color: #3c1218;
 }
-#menus #menu1 h3 {
+.menus .menus__menu-la-note-enchantee h3 {
   top: 52%;
   font-family: "segoe";
   color: #3c1218;
 }
-#menus #menu2 {
+.menus .menus__menu-le-chic-a-la-francaise {
   background-color: #fff0fd;
 }
-#menus #menu2 h2 {
+.menus .menus__menu-le-chic-a-la-francaise h2 {
   top: 38%;
   font-family: "croissant";
   font-size: 85%;
@@ -99,16 +129,16 @@ header h1 a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#menus #menu2 h3 {
+.menus .menus__menu-le-chic-a-la-francaise h3 {
   top: 49%;
   font-size: 130%;
   font-family: "charissil";
   color: #c77412;
 }
-#menus #menu3 {
+.menus .menus__menu-le-delice-des-papilles {
   background-color: #f6f6f6;
 }
-#menus #menu3 h2 {
+.menus .menus__menu-le-delice-des-papilles h2 {
   top: 37%;
   font-family: "parisienne";
   font-size: 120%;
@@ -118,16 +148,16 @@ header h1 a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#menus #menu3 h3 {
+.menus .menus__menu-le-delice-des-papilles h3 {
   top: 50%;
   font-size: 130%;
   font-family: "comics";
   color: #0887fb;
 }
-#menus #menu4 {
+.menus .menus__menu-la-palette-du-gout {
   background-color: #f8fff8;
 }
-#menus #menu4 h2 {
+.menus .menus__menu-la-palette-du-gout h2 {
   top: 37%;
   font-family: "kaushan";
   font-size: 110%;
@@ -137,43 +167,11 @@ header h1 a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#menus #menu4 h3 {
+.menus .menus__menu-la-palette-du-gout h3 {
   font-size: 130%;
   top: 50%;
   font-family: "comics";
   color: #92cd7c;
-}
-
-#menu1, #menu2, #menu3, #menu4 {
-  width: 250px;
-  height: 350px;
-  position: relative;
-  text-align: center;
-  margin-bottom: 8%;
-  -webkit-box-shadow: 0px 0px 8px 6px #e8e8e8;
-  -moz-box-shadow: 0px 0px 8px 6px #e8e8e8;
-  box-shadow: 0px 0px 8px 6px #e8e8e8;
-}
-#menu1 img, #menu1 h2, #menu1 h3, #menu2 img, #menu2 h2, #menu2 h3, #menu3 img, #menu3 h2, #menu3 h3, #menu4 img, #menu4 h2, #menu4 h3 {
-  position: absolute;
-  transform: translateY(-50%);
-  width: 100%;
-}
-#menu1 img, #menu2 img, #menu3 img, #menu4 img {
-  position: relative;
-  width: 30px;
-  height: 30px;
-}
-
-.contenu {
-  width: 250px;
-  height: 350px;
-  font-size: 115%;
-}
-
-.contenu:hover {
-  -webkit-animation: scale-up-center 2000ms forwards;
-  animation: scale-up-center 2000ms forwards;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -200,10 +198,10 @@ header h1 a {
     opacity: 0.5;
   }
 }
-#prochainement {
+.prochainement {
   text-align: center;
 }
-#prochainement button {
+.prochainement button {
   font-family: Helvetica;
   font-size: 130%;
   color: #fdcb46;
@@ -214,15 +212,15 @@ header h1 a {
   border: 0.5px solid #508e7c;
   padding: 0.5% 3% 0.5% 3%;
 }
-#prochainement button #span1 {
+.prochainement button #span1 {
   -webkit-animation: apparition 1500ms infinite;
   animation: apparition 1500ms infinite;
 }
-#prochainement button #span2 {
+.prochainement button #span2 {
   -webkit-animation: apparition 1600ms infinite;
   animation: apparition 1600ms infinite;
 }
-#prochainement button #span3 {
+.prochainement button #span3 {
   -webkit-animation: apparition 1700ms infinite;
   animation: apparition 1700ms infinite;
 }
@@ -252,9 +250,10 @@ footer {
   justify-content: space-between;
   border-top: 0.5px solid #a1c181;
 }
-footer a .mentions_contact {
+footer a {
   margin-inline-start: 10px;
   margin-inline-end: 10px;
+  margin: 1%;
   text-decoration: none;
   text-align: center;
   color: #fdcb46;
@@ -298,6 +297,15 @@ footer a .mentions_contact {
 @media (min-width: 938px) and (max-width: 1249px) {
   #prochainement {
     margin-bottom: 10%;
+  }
+
+  #menus {
+    width: 60%;
+  }
+}
+@media (min-width: 1250px) {
+  #prochainement {
+    margin-bottom: 7%;
   }
 }
 
