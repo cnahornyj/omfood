@@ -66,8 +66,8 @@ header h1 a {
   margin: auto;
 }
 .menus .menus__menu-la-note-enchantee, .menus .menus__menu-le-chic-a-la-francaise, .menus .menus__menu-le-delice-des-papilles, .menus .menus__menu-la-palette-du-gout {
-  width: 250px;
-  height: 350px;
+  width: 300px;
+  height: 400px;
   position: relative;
   text-align: center;
   margin-bottom: 8%;
@@ -79,8 +79,8 @@ header h1 a {
   text-decoration: none;
 }
 .menus .menus__menu-la-note-enchantee a .menus_menu-contenu, .menus .menus__menu-le-chic-a-la-francaise a .menus_menu-contenu, .menus .menus__menu-le-delice-des-papilles a .menus_menu-contenu, .menus .menus__menu-la-palette-du-gout a .menus_menu-contenu {
-  width: 250px;
-  height: 350px;
+  width: 300px;
+  height: 400px;
   font-size: 115%;
 }
 .menus .menus__menu-la-note-enchantee a .menus_menu-contenu:hover, .menus .menus__menu-le-chic-a-la-francaise a .menus_menu-contenu:hover, .menus .menus__menu-le-delice-des-papilles a .menus_menu-contenu:hover, .menus .menus__menu-la-palette-du-gout a .menus_menu-contenu:hover {
@@ -99,14 +99,14 @@ header h1 a {
   background-color: #fcdbd6;
 }
 .menus .menus__menu-la-note-enchantee img {
-  top: 34%;
-  width: 30px;
-  height: 30px;
+  top: 32%;
+  width: 35px;
+  height: 35px;
 }
 .menus .menus__menu-la-note-enchantee h2 {
   top: 42%;
   font-family: "devonshire";
-  font-size: 125%;
+  font-size: 135%;
   color: #3c1218;
 }
 .menus .menus__menu-la-note-enchantee h3 {
@@ -120,13 +120,17 @@ header h1 a {
 .menus .menus__menu-le-chic-a-la-francaise h2 {
   top: 38%;
   font-family: "croissant";
-  font-size: 85%;
+  font-size: 100%;
   color: #c77529;
   letter-spacing: -0.5px;
   background: -o-linear-gradient(right, #c77529 0%, #8f5bfe 100%);
   background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
 }
 .menus .menus__menu-le-chic-a-la-francaise h3 {
   top: 49%;
@@ -140,7 +144,7 @@ header h1 a {
 .menus .menus__menu-le-delice-des-papilles h2 {
   top: 37%;
   font-family: "parisienne";
-  font-size: 120%;
+  font-size: 125%;
   color: #0431df;
   background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
   background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
@@ -199,6 +203,7 @@ header h1 a {
 }
 .prochainement {
   text-align: center;
+  margin-bottom: 8%;
 }
 .prochainement button {
   font-family: Helvetica;
@@ -288,7 +293,7 @@ footer a {
     transform: rotate(0deg);
   }
 }
-@media (max-width: 1150px) {
+@media (min-width: 1100px) and (max-width: 1250px) {
   .menus {
     width: 60%;
   }
@@ -297,13 +302,26 @@ footer a {
     margin-bottom: 10%;
   }
 }
-@media (max-width: 830px) {
+@media (max-width: 1109px) {
   .menus {
     width: 80%;
   }
 
   .prochainement {
     margin-bottom: 10%;
+  }
+}
+@media (max-width: 750px) {
+  .menus {
+    width: 50%;
+  }
+
+  .prochainement {
+    margin-bottom: 10%;
+  }
+
+  .menus__menu-la-note-enchantee, .menus__menu-le-chic-a-la-francaise, .menus__menu-le-delice-des-papilles, .menus__menu-la-palette-du-gout {
+    margin: 7% 0 7% 0;
   }
 }
 

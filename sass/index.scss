@@ -78,8 +78,8 @@ header {
     padding-top: 5%;
     margin: auto;
     .menus__menu-la-note-enchantee, .menus__menu-le-chic-a-la-francaise, .menus__menu-le-delice-des-papilles, .menus__menu-la-palette-du-gout  {
-        width: 250px;
-        height: 350px;
+        width: 300px;
+        height: 400px;
         position: relative;
         text-align: center;
         margin-bottom: 8%;
@@ -89,8 +89,8 @@ header {
         a {
             text-decoration: none;
             .menus_menu-contenu {
-                width: 250px;
-                height: 350px;
+                width: 300px;
+                height: 400px;
                 font-size: 115%;
                 &:hover {
                     -webkit-animation: scale-up-center 2000ms forwards;
@@ -110,14 +110,14 @@ header {
     .menus__menu-la-note-enchantee {
         background-color: darken(#fcdfdb, 1%);
         img {
-            top: 34%;
-            width: 30px;
-            height: 30px;
+            top: 32%;
+            width: 35px;
+            height: 35px;
         }
         h2 {
             top: 42%;
             font-family: 'devonshire';
-            font-size: 125%;
+            font-size: 135%;
             color: #3c1218;
         }
         h3 {
@@ -131,13 +131,17 @@ header {
         h2 {
             top: 38%;
             font-family: 'croissant';
-            font-size: 85%;
+            font-size: 100%;
             color: #c77529;
             letter-spacing: -0.5px;
             background: -o-linear-gradient(right, #c77529 0%, #8f5bfe 100%);
             background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -ms-background-clip: text;
+            -ms-text-fill-color: transparent;
         }
         h3 {
             top: 49%;
@@ -151,7 +155,7 @@ header {
         h2 {
             top: 37%;
             font-family: 'parisienne';
-            font-size: 120%;
+            font-size: 125%;
             color: #0431df;
             background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
             background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
@@ -214,6 +218,7 @@ header {
 
 .prochainement {
     text-align: center;
+    margin-bottom: 8%;
     button {
         font-family: Helvetica;
         font-size: 130%;
@@ -293,7 +298,7 @@ footer {
     100%{transform: rotate(0deg)}
 }
 
-@media (max-width: 1150px) {
+@media (min-width: 1100px) and (max-width: 1250px) {
     .menus {
         width: 60%;
     }
@@ -302,7 +307,7 @@ footer {
     }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1109px) {
     .menus {
         width: 80%;
     }
@@ -310,3 +315,16 @@ footer {
         margin-bottom: 10%;
     }
 }
+
+@media (max-width: 750px) {
+    .menus {
+        width: 50%;
+    }
+    .prochainement {
+        margin-bottom: 10%;
+    }
+    .menus__menu-la-note-enchantee, .menus__menu-le-chic-a-la-francaise, .menus__menu-le-delice-des-papilles, .menus__menu-la-palette-du-gout {
+        margin: 7% 0 7% 0;
+    }
+}
+
