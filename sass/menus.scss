@@ -103,7 +103,7 @@ header {
         h3 {
             background: linear-gradient(to top, rgba(black,0.5) 0%, rgba(black,0.5) 4px, transparent 5px) no-repeat;
             background-size: 0% 100%;
-            transition: background-size 1000ms;
+            transition: background-size 1000ms 700ms ease-out;
             text-align: center;
             &:hover {
                 background-size: 100% 100%;

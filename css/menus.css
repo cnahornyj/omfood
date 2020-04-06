@@ -94,7 +94,7 @@ header h1 a {
 .menu .soustitre h3 {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
   background-size: 0% 100%;
-  transition: background-size 1000ms;
+  transition: background-size 1000ms 700ms ease-out;
   text-align: center;
 }
 .menu .soustitre h3:hover {
